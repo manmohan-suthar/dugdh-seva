@@ -84,12 +84,15 @@ async function startServer() {
     });
   }
 
-  // Bind server to port 3000 and host 0.0.0.0 (required for Cloud Run environments)
-  app.listen(PORT, "127.0.0.1", () => {
-    console.log(`[DAIRY APP SERVER] running on http://localhost:${PORT}`);
+  //   // Bind server to port 3000 and host 0.0.0.0 (required for Cloud Run environments)
+  //   app.listen(PORT, "127.0.0.1", () => {
+  //     console.log(`[DAIRY APP SERVER] running on http://localhost:${PORT}`);
+  //   });
+  // }
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`[DAIRY APP SERVER] running on port ${PORT}`);
   });
 }
-
 startServer().catch((err) => {
   console.error("[SERVER BOOT ERROR]:", err);
 });
