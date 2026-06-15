@@ -1,0 +1,6 @@
+{
+  "name": "Local Dairy Management",
+  "description": "A mobile-first dairy management platform supporting milk collection, sales, advance payments, and daily analytics with custom fat/snf rate calculator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

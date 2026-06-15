@@ -1,0 +1,6436 @@
+{
+  "dairies": [
+    {
+      "_id": "ni3rh3mvzmqfjswv7",
+      "dairyName": "ram dairy",
+      "ownerName": "ram",
+      "address": "mithanpura",
+      "phone": "1234567890",
+      "password": "$2b$10$ACdEnWjwWScenOYOCnbtE.s08pGWbxF95l/FpczDVvViFLWIMg186",
+      "createdAt": "2026-06-15T18:30:05.155Z"
+    }
+  ],
+  "customers": [],
+  "charts": [
+    {
+      "_id": "pxyi53lz0mqfjswvd",
+      "dairyId": "ni3rh3mvzmqfjswv7",
+      "animalType": "cow",
+      "entries": [
+        {
+          "fat": 3,
+          "snf": 7.5,
+          "pricePerLiter": 35
+        },
+        {
+          "fat": 3,
+          "snf": 7.6,
+          "pricePerLiter": 35.3
+        },
+        {
+          "fat": 3,
+          "snf": 7.7,
+          "pricePerLiter": 35.6
+        },
+        {
+          "fat": 3,
+          "snf": 7.8,
+          "pricePerLiter": 35.9
+        },
+        {
+          "fat": 3,
+          "snf": 7.9,
+          "pricePerLiter": 36.2
+        },
+        {
+          "fat": 3,
+          "snf": 8,
+          "pricePerLiter": 36.5
+        },
+        {
+          "fat": 3,
+          "snf": 8.1,
+          "pricePerLiter": 36.8
+        },
+        {
+          "fat": 3,
+          "snf": 8.2,
+          "pricePerLiter": 37.1
+        },
+        {
+          "fat": 3,
+          "snf": 8.3,
+          "pricePerLiter": 37.4
+        },
+        {
+          "fat": 3,
+          "snf": 8.4,
+          "pricePerLiter": 37.7
+        },
+        {
+          "fat": 3,
+          "snf": 8.5,
+          "pricePerLiter": 38
+        },
+        {
+          "fat": 3,
+          "snf": 8.6,
+          "pricePerLiter": 38.3
+        },
+        {
+          "fat": 3,
+          "snf": 8.7,
+          "pricePerLiter": 38.6
+        },
+        {
+          "fat": 3,
+          "snf": 8.8,
+          "pricePerLiter": 38.9
+        },
+        {
+          "fat": 3,
+          "snf": 8.9,
+          "pricePerLiter": 39.2
+        },
+        {
+          "fat": 3,
+          "snf": 9,
+          "pricePerLiter": 39.5
+        },
+        {
+          "fat": 3.1,
+          "snf": 7.5,
+          "pricePerLiter": 35.4
+        },
+        {
+          "fat": 3.1,
+          "snf": 7.6,
+          "pricePerLiter": 35.7
+        },
+        {
+          "fat": 3.1,
+          "snf": 7.7,
+          "pricePerLiter": 36
+        },
+        {
+          "fat": 3.1,
+          "snf": 7.8,
+          "pricePerLiter": 36.3
+        },
+        {
+          "fat": 3.1,
+          "snf": 7.9,
+          "pricePerLiter": 36.6
+        },
+        {
+          "fat": 3.1,
+          "snf": 8,
+          "pricePerLiter": 36.9
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.1,
+          "pricePerLiter": 37.2
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.2,
+          "pricePerLiter": 37.5
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.3,
+          "pricePerLiter": 37.8
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.4,
+          "pricePerLiter": 38.1
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.5,
+          "pricePerLiter": 38.4
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.6,
+          "pricePerLiter": 38.7
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.7,
+          "pricePerLiter": 39
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.8,
+          "pricePerLiter": 39.3
+        },
+        {
+          "fat": 3.1,
+          "snf": 8.9,
+          "pricePerLiter": 39.6
+        },
+        {
+          "fat": 3.1,
+          "snf": 9,
+          "pricePerLiter": 39.9
+        },
+        {
+          "fat": 3.2,
+          "snf": 7.5,
+          "pricePerLiter": 35.8
+        },
+        {
+          "fat": 3.2,
+          "snf": 7.6,
+          "pricePerLiter": 36.1
+        },
+        {
+          "fat": 3.2,
+          "snf": 7.7,
+          "pricePerLiter": 36.4
+        },
+        {
+          "fat": 3.2,
+          "snf": 7.8,
+          "pricePerLiter": 36.7
+        },
+        {
+          "fat": 3.2,
+          "snf": 7.9,
+          "pricePerLiter": 37
+        },
+        {
+          "fat": 3.2,
+          "snf": 8,
+          "pricePerLiter": 37.3
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.1,
+          "pricePerLiter": 37.6
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.2,
+          "pricePerLiter": 37.9
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.3,
+          "pricePerLiter": 38.2
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.4,
+          "pricePerLiter": 38.5
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.5,
+          "pricePerLiter": 38.8
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.6,
+          "pricePerLiter": 39.1
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.7,
+          "pricePerLiter": 39.4
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.8,
+          "pricePerLiter": 39.7
+        },
+        {
+          "fat": 3.2,
+          "snf": 8.9,
+          "pricePerLiter": 40
+        },
+        {
+          "fat": 3.2,
+          "snf": 9,
+          "pricePerLiter": 40.3
+        },
+        {
+          "fat": 3.3,
+          "snf": 7.5,
+          "pricePerLiter": 36.2
+        },
+        {
+          "fat": 3.3,
+          "snf": 7.6,
+          "pricePerLiter": 36.5
+        },
+        {
+          "fat": 3.3,
+          "snf": 7.7,
+          "pricePerLiter": 36.8
+        },
+        {
+          "fat": 3.3,
+          "snf": 7.8,
+          "pricePerLiter": 37.1
+        },
+        {
+          "fat": 3.3,
+          "snf": 7.9,
+          "pricePerLiter": 37.4
+        },
+        {
+          "fat": 3.3,
+          "snf": 8,
+          "pricePerLiter": 37.7
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.1,
+          "pricePerLiter": 38
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.2,
+          "pricePerLiter": 38.3
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.3,
+          "pricePerLiter": 38.6
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.4,
+          "pricePerLiter": 38.9
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.5,
+          "pricePerLiter": 39.2
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.6,
+          "pricePerLiter": 39.5
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.7,
+          "pricePerLiter": 39.8
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.8,
+          "pricePerLiter": 40.1
+        },
+        {
+          "fat": 3.3,
+          "snf": 8.9,
+          "pricePerLiter": 40.4
+        },
+        {
+          "fat": 3.3,
+          "snf": 9,
+          "pricePerLiter": 40.7
+        },
+        {
+          "fat": 3.4,
+          "snf": 7.5,
+          "pricePerLiter": 36.6
+        },
+        {
+          "fat": 3.4,
+          "snf": 7.6,
+          "pricePerLiter": 36.9
+        },
+        {
+          "fat": 3.4,
+          "snf": 7.7,
+          "pricePerLiter": 37.2
+        },
+        {
+          "fat": 3.4,
+          "snf": 7.8,
+          "pricePerLiter": 37.5
+        },
+        {
+          "fat": 3.4,
+          "snf": 7.9,
+          "pricePerLiter": 37.8
+        },
+        {
+          "fat": 3.4,
+          "snf": 8,
+          "pricePerLiter": 38.1
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.1,
+          "pricePerLiter": 38.4
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.2,
+          "pricePerLiter": 38.7
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.3,
+          "pricePerLiter": 39
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.4,
+          "pricePerLiter": 39.3
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.5,
+          "pricePerLiter": 39.6
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.6,
+          "pricePerLiter": 39.9
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.7,
+          "pricePerLiter": 40.2
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.8,
+          "pricePerLiter": 40.5
+        },
+        {
+          "fat": 3.4,
+          "snf": 8.9,
+          "pricePerLiter": 40.8
+        },
+        {
+          "fat": 3.4,
+          "snf": 9,
+          "pricePerLiter": 41.1
+        },
+        {
+          "fat": 3.5,
+          "snf": 7.5,
+          "pricePerLiter": 37
+        },
+        {
+          "fat": 3.5,
+          "snf": 7.6,
+          "pricePerLiter": 37.3
+        },
+        {
+          "fat": 3.5,
+          "snf": 7.7,
+          "pricePerLiter": 37.6
+        },
+        {
+          "fat": 3.5,
+          "snf": 7.8,
+          "pricePerLiter": 37.9
+        },
+        {
+          "fat": 3.5,
+          "snf": 7.9,
+          "pricePerLiter": 38.2
+        },
+        {
+          "fat": 3.5,
+          "snf": 8,
+          "pricePerLiter": 38.5
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.1,
+          "pricePerLiter": 38.8
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.2,
+          "pricePerLiter": 39.1
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.3,
+          "pricePerLiter": 39.4
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.4,
+          "pricePerLiter": 39.7
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.5,
+          "pricePerLiter": 40
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.6,
+          "pricePerLiter": 40.3
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.7,
+          "pricePerLiter": 40.6
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.8,
+          "pricePerLiter": 40.9
+        },
+        {
+          "fat": 3.5,
+          "snf": 8.9,
+          "pricePerLiter": 41.2
+        },
+        {
+          "fat": 3.5,
+          "snf": 9,
+          "pricePerLiter": 41.5
+        },
+        {
+          "fat": 3.6,
+          "snf": 7.5,
+          "pricePerLiter": 37.4
+        },
+        {
+          "fat": 3.6,
+          "snf": 7.6,
+          "pricePerLiter": 37.7
+        },
+        {
+          "fat": 3.6,
+          "snf": 7.7,
+          "pricePerLiter": 38
+        },
+        {
+          "fat": 3.6,
+          "snf": 7.8,
+          "pricePerLiter": 38.3
+        },
+        {
+          "fat": 3.6,
+          "snf": 7.9,
+          "pricePerLiter": 38.6
+        },
+        {
+          "fat": 3.6,
+          "snf": 8,
+          "pricePerLiter": 38.9
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.1,
+          "pricePerLiter": 39.2
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.2,
+          "pricePerLiter": 39.5
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.3,
+          "pricePerLiter": 39.8
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.4,
+          "pricePerLiter": 40.1
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.5,
+          "pricePerLiter": 40.4
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.6,
+          "pricePerLiter": 40.7
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.7,
+          "pricePerLiter": 41
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.8,
+          "pricePerLiter": 41.3
+        },
+        {
+          "fat": 3.6,
+          "snf": 8.9,
+          "pricePerLiter": 41.6
+        },
+        {
+          "fat": 3.6,
+          "snf": 9,
+          "pricePerLiter": 41.9
+        },
+        {
+          "fat": 3.7,
+          "snf": 7.5,
+          "pricePerLiter": 37.8
+        },
+        {
+          "fat": 3.7,
+          "snf": 7.6,
+          "pricePerLiter": 38.1
+        },
+        {
+          "fat": 3.7,
+          "snf": 7.7,
+          "pricePerLiter": 38.4
+        },
+        {
+          "fat": 3.7,
+          "snf": 7.8,
+          "pricePerLiter": 38.7
+        },
+        {
+          "fat": 3.7,
+          "snf": 7.9,
+          "pricePerLiter": 39
+        },
+        {
+          "fat": 3.7,
+          "snf": 8,
+          "pricePerLiter": 39.3
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.1,
+          "pricePerLiter": 39.6
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.2,
+          "pricePerLiter": 39.9
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.3,
+          "pricePerLiter": 40.2
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.4,
+          "pricePerLiter": 40.5
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.5,
+          "pricePerLiter": 40.8
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.6,
+          "pricePerLiter": 41.1
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.7,
+          "pricePerLiter": 41.4
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.8,
+          "pricePerLiter": 41.7
+        },
+        {
+          "fat": 3.7,
+          "snf": 8.9,
+          "pricePerLiter": 42
+        },
+        {
+          "fat": 3.7,
+          "snf": 9,
+          "pricePerLiter": 42.3
+        },
+        {
+          "fat": 3.8,
+          "snf": 7.5,
+          "pricePerLiter": 38.2
+        },
+        {
+          "fat": 3.8,
+          "snf": 7.6,
+          "pricePerLiter": 38.5
+        },
+        {
+          "fat": 3.8,
+          "snf": 7.7,
+          "pricePerLiter": 38.8
+        },
+        {
+          "fat": 3.8,
+          "snf": 7.8,
+          "pricePerLiter": 39.1
+        },
+        {
+          "fat": 3.8,
+          "snf": 7.9,
+          "pricePerLiter": 39.4
+        },
+        {
+          "fat": 3.8,
+          "snf": 8,
+          "pricePerLiter": 39.7
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.1,
+          "pricePerLiter": 40
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.2,
+          "pricePerLiter": 40.3
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.3,
+          "pricePerLiter": 40.6
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.4,
+          "pricePerLiter": 40.9
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.5,
+          "pricePerLiter": 41.2
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.6,
+          "pricePerLiter": 41.5
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.7,
+          "pricePerLiter": 41.8
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.8,
+          "pricePerLiter": 42.1
+        },
+        {
+          "fat": 3.8,
+          "snf": 8.9,
+          "pricePerLiter": 42.4
+        },
+        {
+          "fat": 3.8,
+          "snf": 9,
+          "pricePerLiter": 42.7
+        },
+        {
+          "fat": 3.9,
+          "snf": 7.5,
+          "pricePerLiter": 38.6
+        },
+        {
+          "fat": 3.9,
+          "snf": 7.6,
+          "pricePerLiter": 38.9
+        },
+        {
+          "fat": 3.9,
+          "snf": 7.7,
+          "pricePerLiter": 39.2
+        },
+        {
+          "fat": 3.9,
+          "snf": 7.8,
+          "pricePerLiter": 39.5
+        },
+        {
+          "fat": 3.9,
+          "snf": 7.9,
+          "pricePerLiter": 39.8
+        },
+        {
+          "fat": 3.9,
+          "snf": 8,
+          "pricePerLiter": 40.1
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.1,
+          "pricePerLiter": 40.4
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.2,
+          "pricePerLiter": 40.7
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.3,
+          "pricePerLiter": 41
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.4,
+          "pricePerLiter": 41.3
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.5,
+          "pricePerLiter": 41.6
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.6,
+          "pricePerLiter": 41.9
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.7,
+          "pricePerLiter": 42.2
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.8,
+          "pricePerLiter": 42.5
+        },
+        {
+          "fat": 3.9,
+          "snf": 8.9,
+          "pricePerLiter": 42.8
+        },
+        {
+          "fat": 3.9,
+          "snf": 9,
+          "pricePerLiter": 43.1
+        },
+        {
+          "fat": 4,
+          "snf": 7.5,
+          "pricePerLiter": 39
+        },
+        {
+          "fat": 4,
+          "snf": 7.6,
+          "pricePerLiter": 39.3
+        },
+        {
+          "fat": 4,
+          "snf": 7.7,
+          "pricePerLiter": 39.6
+        },
+        {
+          "fat": 4,
+          "snf": 7.8,
+          "pricePerLiter": 39.9
+        },
+        {
+          "fat": 4,
+          "snf": 7.9,
+          "pricePerLiter": 40.2
+        },
+        {
+          "fat": 4,
+          "snf": 8,
+          "pricePerLiter": 40.5
+        },
+        {
+          "fat": 4,
+          "snf": 8.1,
+          "pricePerLiter": 40.8
+        },
+        {
+          "fat": 4,
+          "snf": 8.2,
+          "pricePerLiter": 41.1
+        },
+        {
+          "fat": 4,
+          "snf": 8.3,
+          "pricePerLiter": 41.4
+        },
+        {
+          "fat": 4,
+          "snf": 8.4,
+          "pricePerLiter": 41.7
+        },
+        {
+          "fat": 4,
+          "snf": 8.5,
+          "pricePerLiter": 42
+        },
+        {
+          "fat": 4,
+          "snf": 8.6,
+          "pricePerLiter": 42.3
+        },
+        {
+          "fat": 4,
+          "snf": 8.7,
+          "pricePerLiter": 42.6
+        },
+        {
+          "fat": 4,
+          "snf": 8.8,
+          "pricePerLiter": 42.9
+        },
+        {
+          "fat": 4,
+          "snf": 8.9,
+          "pricePerLiter": 43.2
+        },
+        {
+          "fat": 4,
+          "snf": 9,
+          "pricePerLiter": 43.5
+        },
+        {
+          "fat": 4.1,
+          "snf": 7.5,
+          "pricePerLiter": 39.4
+        },
+        {
+          "fat": 4.1,
+          "snf": 7.6,
+          "pricePerLiter": 39.7
+        },
+        {
+          "fat": 4.1,
+          "snf": 7.7,
+          "pricePerLiter": 40
+        },
+        {
+          "fat": 4.1,
+          "snf": 7.8,
+          "pricePerLiter": 40.3
+        },
+        {
+          "fat": 4.1,
+          "snf": 7.9,
+          "pricePerLiter": 40.6
+        },
+        {
+          "fat": 4.1,
+          "snf": 8,
+          "pricePerLiter": 40.9
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.1,
+          "pricePerLiter": 41.2
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.2,
+          "pricePerLiter": 41.5
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.3,
+          "pricePerLiter": 41.8
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.4,
+          "pricePerLiter": 42.1
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.5,
+          "pricePerLiter": 42.4
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.6,
+          "pricePerLiter": 42.7
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.7,
+          "pricePerLiter": 43
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.8,
+          "pricePerLiter": 43.3
+        },
+        {
+          "fat": 4.1,
+          "snf": 8.9,
+          "pricePerLiter": 43.6
+        },
+        {
+          "fat": 4.1,
+          "snf": 9,
+          "pricePerLiter": 43.9
+        },
+        {
+          "fat": 4.2,
+          "snf": 7.5,
+          "pricePerLiter": 39.8
+        },
+        {
+          "fat": 4.2,
+          "snf": 7.6,
+          "pricePerLiter": 40.1
+        },
+        {
+          "fat": 4.2,
+          "snf": 7.7,
+          "pricePerLiter": 40.4
+        },
+        {
+          "fat": 4.2,
+          "snf": 7.8,
+          "pricePerLiter": 40.7
+        },
+        {
+          "fat": 4.2,
+          "snf": 7.9,
+          "pricePerLiter": 41
+        },
+        {
+          "fat": 4.2,
+          "snf": 8,
+          "pricePerLiter": 41.3
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.1,
+          "pricePerLiter": 41.6
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.2,
+          "pricePerLiter": 41.9
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.3,
+          "pricePerLiter": 42.2
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.4,
+          "pricePerLiter": 42.5
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.5,
+          "pricePerLiter": 42.8
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.6,
+          "pricePerLiter": 43.1
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.7,
+          "pricePerLiter": 43.4
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.8,
+          "pricePerLiter": 43.7
+        },
+        {
+          "fat": 4.2,
+          "snf": 8.9,
+          "pricePerLiter": 44
+        },
+        {
+          "fat": 4.2,
+          "snf": 9,
+          "pricePerLiter": 44.3
+        },
+        {
+          "fat": 4.3,
+          "snf": 7.5,
+          "pricePerLiter": 40.2
+        },
+        {
+          "fat": 4.3,
+          "snf": 7.6,
+          "pricePerLiter": 40.5
+        },
+        {
+          "fat": 4.3,
+          "snf": 7.7,
+          "pricePerLiter": 40.8
+        },
+        {
+          "fat": 4.3,
+          "snf": 7.8,
+          "pricePerLiter": 41.1
+        },
+        {
+          "fat": 4.3,
+          "snf": 7.9,
+          "pricePerLiter": 41.4
+        },
+        {
+          "fat": 4.3,
+          "snf": 8,
+          "pricePerLiter": 41.7
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.1,
+          "pricePerLiter": 42
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.2,
+          "pricePerLiter": 42.3
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.3,
+          "pricePerLiter": 42.6
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.4,
+          "pricePerLiter": 42.9
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.5,
+          "pricePerLiter": 43.2
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.6,
+          "pricePerLiter": 43.5
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.7,
+          "pricePerLiter": 43.8
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.8,
+          "pricePerLiter": 44.1
+        },
+        {
+          "fat": 4.3,
+          "snf": 8.9,
+          "pricePerLiter": 44.4
+        },
+        {
+          "fat": 4.3,
+          "snf": 9,
+          "pricePerLiter": 44.7
+        },
+        {
+          "fat": 4.4,
+          "snf": 7.5,
+          "pricePerLiter": 40.6
+        },
+        {
+          "fat": 4.4,
+          "snf": 7.6,
+          "pricePerLiter": 40.9
+        },
+        {
+          "fat": 4.4,
+          "snf": 7.7,
+          "pricePerLiter": 41.2
+        },
+        {
+          "fat": 4.4,
+          "snf": 7.8,
+          "pricePerLiter": 41.5
+        },
+        {
+          "fat": 4.4,
+          "snf": 7.9,
+          "pricePerLiter": 41.8
+        },
+        {
+          "fat": 4.4,
+          "snf": 8,
+          "pricePerLiter": 42.1
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.1,
+          "pricePerLiter": 42.4
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.2,
+          "pricePerLiter": 42.7
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.3,
+          "pricePerLiter": 43
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.4,
+          "pricePerLiter": 43.3
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.5,
+          "pricePerLiter": 43.6
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.6,
+          "pricePerLiter": 43.9
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.7,
+          "pricePerLiter": 44.2
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.8,
+          "pricePerLiter": 44.5
+        },
+        {
+          "fat": 4.4,
+          "snf": 8.9,
+          "pricePerLiter": 44.8
+        },
+        {
+          "fat": 4.4,
+          "snf": 9,
+          "pricePerLiter": 45.1
+        },
+        {
+          "fat": 4.5,
+          "snf": 7.5,
+          "pricePerLiter": 41
+        },
+        {
+          "fat": 4.5,
+          "snf": 7.6,
+          "pricePerLiter": 41.3
+        },
+        {
+          "fat": 4.5,
+          "snf": 7.7,
+          "pricePerLiter": 41.6
+        },
+        {
+          "fat": 4.5,
+          "snf": 7.8,
+          "pricePerLiter": 41.9
+        },
+        {
+          "fat": 4.5,
+          "snf": 7.9,
+          "pricePerLiter": 42.2
+        },
+        {
+          "fat": 4.5,
+          "snf": 8,
+          "pricePerLiter": 42.5
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.1,
+          "pricePerLiter": 42.8
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.2,
+          "pricePerLiter": 43.1
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.3,
+          "pricePerLiter": 43.4
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.4,
+          "pricePerLiter": 43.7
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.5,
+          "pricePerLiter": 44
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.6,
+          "pricePerLiter": 44.3
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.7,
+          "pricePerLiter": 44.6
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.8,
+          "pricePerLiter": 44.9
+        },
+        {
+          "fat": 4.5,
+          "snf": 8.9,
+          "pricePerLiter": 45.2
+        },
+        {
+          "fat": 4.5,
+          "snf": 9,
+          "pricePerLiter": 45.5
+        },
+        {
+          "fat": 4.6,
+          "snf": 7.5,
+          "pricePerLiter": 41.4
+        },
+        {
+          "fat": 4.6,
+          "snf": 7.6,
+          "pricePerLiter": 41.7
+        },
+        {
+          "fat": 4.6,
+          "snf": 7.7,
+          "pricePerLiter": 42
+        },
+        {
+          "fat": 4.6,
+          "snf": 7.8,
+          "pricePerLiter": 42.3
+        },
+        {
+          "fat": 4.6,
+          "snf": 7.9,
+          "pricePerLiter": 42.6
+        },
+        {
+          "fat": 4.6,
+          "snf": 8,
+          "pricePerLiter": 42.9
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.1,
+          "pricePerLiter": 43.2
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.2,
+          "pricePerLiter": 43.5
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.3,
+          "pricePerLiter": 43.8
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.4,
+          "pricePerLiter": 44.1
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.5,
+          "pricePerLiter": 44.4
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.6,
+          "pricePerLiter": 44.7
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.7,
+          "pricePerLiter": 45
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.8,
+          "pricePerLiter": 45.3
+        },
+        {
+          "fat": 4.6,
+          "snf": 8.9,
+          "pricePerLiter": 45.6
+        },
+        {
+          "fat": 4.6,
+          "snf": 9,
+          "pricePerLiter": 45.9
+        },
+        {
+          "fat": 4.7,
+          "snf": 7.5,
+          "pricePerLiter": 41.8
+        },
+        {
+          "fat": 4.7,
+          "snf": 7.6,
+          "pricePerLiter": 42.1
+        },
+        {
+          "fat": 4.7,
+          "snf": 7.7,
+          "pricePerLiter": 42.4
+        },
+        {
+          "fat": 4.7,
+          "snf": 7.8,
+          "pricePerLiter": 42.7
+        },
+        {
+          "fat": 4.7,
+          "snf": 7.9,
+          "pricePerLiter": 43
+        },
+        {
+          "fat": 4.7,
+          "snf": 8,
+          "pricePerLiter": 43.3
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.1,
+          "pricePerLiter": 43.6
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.2,
+          "pricePerLiter": 43.9
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.3,
+          "pricePerLiter": 44.2
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.4,
+          "pricePerLiter": 44.5
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.5,
+          "pricePerLiter": 44.8
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.6,
+          "pricePerLiter": 45.1
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.7,
+          "pricePerLiter": 45.4
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.8,
+          "pricePerLiter": 45.7
+        },
+        {
+          "fat": 4.7,
+          "snf": 8.9,
+          "pricePerLiter": 46
+        },
+        {
+          "fat": 4.7,
+          "snf": 9,
+          "pricePerLiter": 46.3
+        },
+        {
+          "fat": 4.8,
+          "snf": 7.5,
+          "pricePerLiter": 42.2
+        },
+        {
+          "fat": 4.8,
+          "snf": 7.6,
+          "pricePerLiter": 42.5
+        },
+        {
+          "fat": 4.8,
+          "snf": 7.7,
+          "pricePerLiter": 42.8
+        },
+        {
+          "fat": 4.8,
+          "snf": 7.8,
+          "pricePerLiter": 43.1
+        },
+        {
+          "fat": 4.8,
+          "snf": 7.9,
+          "pricePerLiter": 43.4
+        },
+        {
+          "fat": 4.8,
+          "snf": 8,
+          "pricePerLiter": 43.7
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.1,
+          "pricePerLiter": 44
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.2,
+          "pricePerLiter": 44.3
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.3,
+          "pricePerLiter": 44.6
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.4,
+          "pricePerLiter": 44.9
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.5,
+          "pricePerLiter": 45.2
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.6,
+          "pricePerLiter": 45.5
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.7,
+          "pricePerLiter": 45.8
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.8,
+          "pricePerLiter": 46.1
+        },
+        {
+          "fat": 4.8,
+          "snf": 8.9,
+          "pricePerLiter": 46.4
+        },
+        {
+          "fat": 4.8,
+          "snf": 9,
+          "pricePerLiter": 46.7
+        },
+        {
+          "fat": 4.9,
+          "snf": 7.5,
+          "pricePerLiter": 42.6
+        },
+        {
+          "fat": 4.9,
+          "snf": 7.6,
+          "pricePerLiter": 42.9
+        },
+        {
+          "fat": 4.9,
+          "snf": 7.7,
+          "pricePerLiter": 43.2
+        },
+        {
+          "fat": 4.9,
+          "snf": 7.8,
+          "pricePerLiter": 43.5
+        },
+        {
+          "fat": 4.9,
+          "snf": 7.9,
+          "pricePerLiter": 43.8
+        },
+        {
+          "fat": 4.9,
+          "snf": 8,
+          "pricePerLiter": 44.1
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.1,
+          "pricePerLiter": 44.4
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.2,
+          "pricePerLiter": 44.7
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.3,
+          "pricePerLiter": 45
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.4,
+          "pricePerLiter": 45.3
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.5,
+          "pricePerLiter": 45.6
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.6,
+          "pricePerLiter": 45.9
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.7,
+          "pricePerLiter": 46.2
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.8,
+          "pricePerLiter": 46.5
+        },
+        {
+          "fat": 4.9,
+          "snf": 8.9,
+          "pricePerLiter": 46.8
+        },
+        {
+          "fat": 4.9,
+          "snf": 9,
+          "pricePerLiter": 47.1
+        },
+        {
+          "fat": 5,
+          "snf": 7.5,
+          "pricePerLiter": 43
+        },
+        {
+          "fat": 5,
+          "snf": 7.6,
+          "pricePerLiter": 43.3
+        },
+        {
+          "fat": 5,
+          "snf": 7.7,
+          "pricePerLiter": 43.6
+        },
+        {
+          "fat": 5,
+          "snf": 7.8,
+          "pricePerLiter": 43.9
+        },
+        {
+          "fat": 5,
+          "snf": 7.9,
+          "pricePerLiter": 44.2
+        },
+        {
+          "fat": 5,
+          "snf": 8,
+          "pricePerLiter": 44.5
+        },
+        {
+          "fat": 5,
+          "snf": 8.1,
+          "pricePerLiter": 44.8
+        },
+        {
+          "fat": 5,
+          "snf": 8.2,
+          "pricePerLiter": 45.1
+        },
+        {
+          "fat": 5,
+          "snf": 8.3,
+          "pricePerLiter": 45.4
+        },
+        {
+          "fat": 5,
+          "snf": 8.4,
+          "pricePerLiter": 45.7
+        },
+        {
+          "fat": 5,
+          "snf": 8.5,
+          "pricePerLiter": 46
+        },
+        {
+          "fat": 5,
+          "snf": 8.6,
+          "pricePerLiter": 46.3
+        },
+        {
+          "fat": 5,
+          "snf": 8.7,
+          "pricePerLiter": 46.6
+        },
+        {
+          "fat": 5,
+          "snf": 8.8,
+          "pricePerLiter": 46.9
+        },
+        {
+          "fat": 5,
+          "snf": 8.9,
+          "pricePerLiter": 47.2
+        },
+        {
+          "fat": 5,
+          "snf": 9,
+          "pricePerLiter": 47.5
+        },
+        {
+          "fat": 5.1,
+          "snf": 7.5,
+          "pricePerLiter": 43.4
+        },
+        {
+          "fat": 5.1,
+          "snf": 7.6,
+          "pricePerLiter": 43.7
+        },
+        {
+          "fat": 5.1,
+          "snf": 7.7,
+          "pricePerLiter": 44
+        },
+        {
+          "fat": 5.1,
+          "snf": 7.8,
+          "pricePerLiter": 44.3
+        },
+        {
+          "fat": 5.1,
+          "snf": 7.9,
+          "pricePerLiter": 44.6
+        },
+        {
+          "fat": 5.1,
+          "snf": 8,
+          "pricePerLiter": 44.9
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.1,
+          "pricePerLiter": 45.2
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.2,
+          "pricePerLiter": 45.5
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.3,
+          "pricePerLiter": 45.8
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.4,
+          "pricePerLiter": 46.1
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.5,
+          "pricePerLiter": 46.4
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.6,
+          "pricePerLiter": 46.7
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.7,
+          "pricePerLiter": 47
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.8,
+          "pricePerLiter": 47.3
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.9,
+          "pricePerLiter": 47.6
+        },
+        {
+          "fat": 5.1,
+          "snf": 9,
+          "pricePerLiter": 47.9
+        },
+        {
+          "fat": 5.2,
+          "snf": 7.5,
+          "pricePerLiter": 43.8
+        },
+        {
+          "fat": 5.2,
+          "snf": 7.6,
+          "pricePerLiter": 44.1
+        },
+        {
+          "fat": 5.2,
+          "snf": 7.7,
+          "pricePerLiter": 44.4
+        },
+        {
+          "fat": 5.2,
+          "snf": 7.8,
+          "pricePerLiter": 44.7
+        },
+        {
+          "fat": 5.2,
+          "snf": 7.9,
+          "pricePerLiter": 45
+        },
+        {
+          "fat": 5.2,
+          "snf": 8,
+          "pricePerLiter": 45.3
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.1,
+          "pricePerLiter": 45.6
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.2,
+          "pricePerLiter": 45.9
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.3,
+          "pricePerLiter": 46.2
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.4,
+          "pricePerLiter": 46.5
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.5,
+          "pricePerLiter": 46.8
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.6,
+          "pricePerLiter": 47.1
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.7,
+          "pricePerLiter": 47.4
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.8,
+          "pricePerLiter": 47.7
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.9,
+          "pricePerLiter": 48
+        },
+        {
+          "fat": 5.2,
+          "snf": 9,
+          "pricePerLiter": 48.3
+        },
+        {
+          "fat": 5.3,
+          "snf": 7.5,
+          "pricePerLiter": 44.2
+        },
+        {
+          "fat": 5.3,
+          "snf": 7.6,
+          "pricePerLiter": 44.5
+        },
+        {
+          "fat": 5.3,
+          "snf": 7.7,
+          "pricePerLiter": 44.8
+        },
+        {
+          "fat": 5.3,
+          "snf": 7.8,
+          "pricePerLiter": 45.1
+        },
+        {
+          "fat": 5.3,
+          "snf": 7.9,
+          "pricePerLiter": 45.4
+        },
+        {
+          "fat": 5.3,
+          "snf": 8,
+          "pricePerLiter": 45.7
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.1,
+          "pricePerLiter": 46
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.2,
+          "pricePerLiter": 46.3
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.3,
+          "pricePerLiter": 46.6
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.4,
+          "pricePerLiter": 46.9
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.5,
+          "pricePerLiter": 47.2
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.6,
+          "pricePerLiter": 47.5
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.7,
+          "pricePerLiter": 47.8
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.8,
+          "pricePerLiter": 48.1
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.9,
+          "pricePerLiter": 48.4
+        },
+        {
+          "fat": 5.3,
+          "snf": 9,
+          "pricePerLiter": 48.7
+        },
+        {
+          "fat": 5.4,
+          "snf": 7.5,
+          "pricePerLiter": 44.6
+        },
+        {
+          "fat": 5.4,
+          "snf": 7.6,
+          "pricePerLiter": 44.9
+        },
+        {
+          "fat": 5.4,
+          "snf": 7.7,
+          "pricePerLiter": 45.2
+        },
+        {
+          "fat": 5.4,
+          "snf": 7.8,
+          "pricePerLiter": 45.5
+        },
+        {
+          "fat": 5.4,
+          "snf": 7.9,
+          "pricePerLiter": 45.8
+        },
+        {
+          "fat": 5.4,
+          "snf": 8,
+          "pricePerLiter": 46.1
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.1,
+          "pricePerLiter": 46.4
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.2,
+          "pricePerLiter": 46.7
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.3,
+          "pricePerLiter": 47
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.4,
+          "pricePerLiter": 47.3
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.5,
+          "pricePerLiter": 47.6
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.6,
+          "pricePerLiter": 47.9
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.7,
+          "pricePerLiter": 48.2
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.8,
+          "pricePerLiter": 48.5
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.9,
+          "pricePerLiter": 48.8
+        },
+        {
+          "fat": 5.4,
+          "snf": 9,
+          "pricePerLiter": 49.1
+        },
+        {
+          "fat": 5.5,
+          "snf": 7.5,
+          "pricePerLiter": 45
+        },
+        {
+          "fat": 5.5,
+          "snf": 7.6,
+          "pricePerLiter": 45.3
+        },
+        {
+          "fat": 5.5,
+          "snf": 7.7,
+          "pricePerLiter": 45.6
+        },
+        {
+          "fat": 5.5,
+          "snf": 7.8,
+          "pricePerLiter": 45.9
+        },
+        {
+          "fat": 5.5,
+          "snf": 7.9,
+          "pricePerLiter": 46.2
+        },
+        {
+          "fat": 5.5,
+          "snf": 8,
+          "pricePerLiter": 46.5
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.1,
+          "pricePerLiter": 46.8
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.2,
+          "pricePerLiter": 47.1
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.3,
+          "pricePerLiter": 47.4
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.4,
+          "pricePerLiter": 47.7
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.5,
+          "pricePerLiter": 48
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.6,
+          "pricePerLiter": 48.3
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.7,
+          "pricePerLiter": 48.6
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.8,
+          "pricePerLiter": 48.9
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.9,
+          "pricePerLiter": 49.2
+        },
+        {
+          "fat": 5.5,
+          "snf": 9,
+          "pricePerLiter": 49.5
+        }
+      ],
+      "updatedAt": "2026-06-15T18:30:05.162Z"
+    },
+    {
+      "_id": "bngb6lvommqfjswve",
+      "dairyId": "ni3rh3mvzmqfjswv7",
+      "animalType": "buffalo",
+      "entries": [
+        {
+          "fat": 5,
+          "snf": 8,
+          "pricePerLiter": 52
+        },
+        {
+          "fat": 5,
+          "snf": 8.1,
+          "pricePerLiter": 52.4
+        },
+        {
+          "fat": 5,
+          "snf": 8.2,
+          "pricePerLiter": 52.8
+        },
+        {
+          "fat": 5,
+          "snf": 8.3,
+          "pricePerLiter": 53.2
+        },
+        {
+          "fat": 5,
+          "snf": 8.4,
+          "pricePerLiter": 53.6
+        },
+        {
+          "fat": 5,
+          "snf": 8.5,
+          "pricePerLiter": 54
+        },
+        {
+          "fat": 5,
+          "snf": 8.6,
+          "pricePerLiter": 54.4
+        },
+        {
+          "fat": 5,
+          "snf": 8.7,
+          "pricePerLiter": 54.8
+        },
+        {
+          "fat": 5,
+          "snf": 8.8,
+          "pricePerLiter": 55.2
+        },
+        {
+          "fat": 5,
+          "snf": 8.9,
+          "pricePerLiter": 55.6
+        },
+        {
+          "fat": 5,
+          "snf": 9,
+          "pricePerLiter": 56
+        },
+        {
+          "fat": 5,
+          "snf": 9.1,
+          "pricePerLiter": 56.4
+        },
+        {
+          "fat": 5,
+          "snf": 9.2,
+          "pricePerLiter": 56.8
+        },
+        {
+          "fat": 5,
+          "snf": 9.3,
+          "pricePerLiter": 57.2
+        },
+        {
+          "fat": 5,
+          "snf": 9.4,
+          "pricePerLiter": 57.6
+        },
+        {
+          "fat": 5,
+          "snf": 9.5,
+          "pricePerLiter": 58
+        },
+        {
+          "fat": 5,
+          "snf": 9.6,
+          "pricePerLiter": 58.4
+        },
+        {
+          "fat": 5,
+          "snf": 9.7,
+          "pricePerLiter": 58.8
+        },
+        {
+          "fat": 5,
+          "snf": 9.8,
+          "pricePerLiter": 59.2
+        },
+        {
+          "fat": 5,
+          "snf": 9.9,
+          "pricePerLiter": 59.6
+        },
+        {
+          "fat": 5,
+          "snf": 10,
+          "pricePerLiter": 60
+        },
+        {
+          "fat": 5.1,
+          "snf": 8,
+          "pricePerLiter": 52.5
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.1,
+          "pricePerLiter": 52.9
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.2,
+          "pricePerLiter": 53.3
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.3,
+          "pricePerLiter": 53.7
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.4,
+          "pricePerLiter": 54.1
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.5,
+          "pricePerLiter": 54.5
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.6,
+          "pricePerLiter": 54.9
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.7,
+          "pricePerLiter": 55.3
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.8,
+          "pricePerLiter": 55.7
+        },
+        {
+          "fat": 5.1,
+          "snf": 8.9,
+          "pricePerLiter": 56.1
+        },
+        {
+          "fat": 5.1,
+          "snf": 9,
+          "pricePerLiter": 56.5
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.1,
+          "pricePerLiter": 56.9
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.2,
+          "pricePerLiter": 57.3
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.3,
+          "pricePerLiter": 57.7
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.4,
+          "pricePerLiter": 58.1
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.5,
+          "pricePerLiter": 58.5
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.6,
+          "pricePerLiter": 58.9
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.7,
+          "pricePerLiter": 59.3
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.8,
+          "pricePerLiter": 59.7
+        },
+        {
+          "fat": 5.1,
+          "snf": 9.9,
+          "pricePerLiter": 60.1
+        },
+        {
+          "fat": 5.1,
+          "snf": 10,
+          "pricePerLiter": 60.5
+        },
+        {
+          "fat": 5.2,
+          "snf": 8,
+          "pricePerLiter": 53
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.1,
+          "pricePerLiter": 53.4
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.2,
+          "pricePerLiter": 53.8
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.3,
+          "pricePerLiter": 54.2
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.4,
+          "pricePerLiter": 54.6
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.5,
+          "pricePerLiter": 55
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.6,
+          "pricePerLiter": 55.4
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.7,
+          "pricePerLiter": 55.8
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.8,
+          "pricePerLiter": 56.2
+        },
+        {
+          "fat": 5.2,
+          "snf": 8.9,
+          "pricePerLiter": 56.6
+        },
+        {
+          "fat": 5.2,
+          "snf": 9,
+          "pricePerLiter": 57
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.1,
+          "pricePerLiter": 57.4
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.2,
+          "pricePerLiter": 57.8
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.3,
+          "pricePerLiter": 58.2
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.4,
+          "pricePerLiter": 58.6
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.5,
+          "pricePerLiter": 59
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.6,
+          "pricePerLiter": 59.4
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.7,
+          "pricePerLiter": 59.8
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.8,
+          "pricePerLiter": 60.2
+        },
+        {
+          "fat": 5.2,
+          "snf": 9.9,
+          "pricePerLiter": 60.6
+        },
+        {
+          "fat": 5.2,
+          "snf": 10,
+          "pricePerLiter": 61
+        },
+        {
+          "fat": 5.3,
+          "snf": 8,
+          "pricePerLiter": 53.5
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.1,
+          "pricePerLiter": 53.9
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.2,
+          "pricePerLiter": 54.3
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.3,
+          "pricePerLiter": 54.7
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.4,
+          "pricePerLiter": 55.1
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.5,
+          "pricePerLiter": 55.5
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.6,
+          "pricePerLiter": 55.9
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.7,
+          "pricePerLiter": 56.3
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.8,
+          "pricePerLiter": 56.7
+        },
+        {
+          "fat": 5.3,
+          "snf": 8.9,
+          "pricePerLiter": 57.1
+        },
+        {
+          "fat": 5.3,
+          "snf": 9,
+          "pricePerLiter": 57.5
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.1,
+          "pricePerLiter": 57.9
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.2,
+          "pricePerLiter": 58.3
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.3,
+          "pricePerLiter": 58.7
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.4,
+          "pricePerLiter": 59.1
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.5,
+          "pricePerLiter": 59.5
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.6,
+          "pricePerLiter": 59.9
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.7,
+          "pricePerLiter": 60.3
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.8,
+          "pricePerLiter": 60.7
+        },
+        {
+          "fat": 5.3,
+          "snf": 9.9,
+          "pricePerLiter": 61.1
+        },
+        {
+          "fat": 5.3,
+          "snf": 10,
+          "pricePerLiter": 61.5
+        },
+        {
+          "fat": 5.4,
+          "snf": 8,
+          "pricePerLiter": 54
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.1,
+          "pricePerLiter": 54.4
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.2,
+          "pricePerLiter": 54.8
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.3,
+          "pricePerLiter": 55.2
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.4,
+          "pricePerLiter": 55.6
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.5,
+          "pricePerLiter": 56
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.6,
+          "pricePerLiter": 56.4
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.7,
+          "pricePerLiter": 56.8
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.8,
+          "pricePerLiter": 57.2
+        },
+        {
+          "fat": 5.4,
+          "snf": 8.9,
+          "pricePerLiter": 57.6
+        },
+        {
+          "fat": 5.4,
+          "snf": 9,
+          "pricePerLiter": 58
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.1,
+          "pricePerLiter": 58.4
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.2,
+          "pricePerLiter": 58.8
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.3,
+          "pricePerLiter": 59.2
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.4,
+          "pricePerLiter": 59.6
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.5,
+          "pricePerLiter": 60
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.6,
+          "pricePerLiter": 60.4
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.7,
+          "pricePerLiter": 60.8
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.8,
+          "pricePerLiter": 61.2
+        },
+        {
+          "fat": 5.4,
+          "snf": 9.9,
+          "pricePerLiter": 61.6
+        },
+        {
+          "fat": 5.4,
+          "snf": 10,
+          "pricePerLiter": 62
+        },
+        {
+          "fat": 5.5,
+          "snf": 8,
+          "pricePerLiter": 54.5
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.1,
+          "pricePerLiter": 54.9
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.2,
+          "pricePerLiter": 55.3
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.3,
+          "pricePerLiter": 55.7
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.4,
+          "pricePerLiter": 56.1
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.5,
+          "pricePerLiter": 56.5
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.6,
+          "pricePerLiter": 56.9
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.7,
+          "pricePerLiter": 57.3
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.8,
+          "pricePerLiter": 57.7
+        },
+        {
+          "fat": 5.5,
+          "snf": 8.9,
+          "pricePerLiter": 58.1
+        },
+        {
+          "fat": 5.5,
+          "snf": 9,
+          "pricePerLiter": 58.5
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.1,
+          "pricePerLiter": 58.9
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.2,
+          "pricePerLiter": 59.3
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.3,
+          "pricePerLiter": 59.7
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.4,
+          "pricePerLiter": 60.1
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.5,
+          "pricePerLiter": 60.5
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.6,
+          "pricePerLiter": 60.9
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.7,
+          "pricePerLiter": 61.3
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.8,
+          "pricePerLiter": 61.7
+        },
+        {
+          "fat": 5.5,
+          "snf": 9.9,
+          "pricePerLiter": 62.1
+        },
+        {
+          "fat": 5.5,
+          "snf": 10,
+          "pricePerLiter": 62.5
+        },
+        {
+          "fat": 5.6,
+          "snf": 8,
+          "pricePerLiter": 55
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.1,
+          "pricePerLiter": 55.4
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.2,
+          "pricePerLiter": 55.8
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.3,
+          "pricePerLiter": 56.2
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.4,
+          "pricePerLiter": 56.6
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.5,
+          "pricePerLiter": 57
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.6,
+          "pricePerLiter": 57.4
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.7,
+          "pricePerLiter": 57.8
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.8,
+          "pricePerLiter": 58.2
+        },
+        {
+          "fat": 5.6,
+          "snf": 8.9,
+          "pricePerLiter": 58.6
+        },
+        {
+          "fat": 5.6,
+          "snf": 9,
+          "pricePerLiter": 59
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.1,
+          "pricePerLiter": 59.4
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.2,
+          "pricePerLiter": 59.8
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.3,
+          "pricePerLiter": 60.2
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.4,
+          "pricePerLiter": 60.6
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.5,
+          "pricePerLiter": 61
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.6,
+          "pricePerLiter": 61.4
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.7,
+          "pricePerLiter": 61.8
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.8,
+          "pricePerLiter": 62.2
+        },
+        {
+          "fat": 5.6,
+          "snf": 9.9,
+          "pricePerLiter": 62.6
+        },
+        {
+          "fat": 5.6,
+          "snf": 10,
+          "pricePerLiter": 63
+        },
+        {
+          "fat": 5.7,
+          "snf": 8,
+          "pricePerLiter": 55.5
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.1,
+          "pricePerLiter": 55.9
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.2,
+          "pricePerLiter": 56.3
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.3,
+          "pricePerLiter": 56.7
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.4,
+          "pricePerLiter": 57.1
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.5,
+          "pricePerLiter": 57.5
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.6,
+          "pricePerLiter": 57.9
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.7,
+          "pricePerLiter": 58.3
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.8,
+          "pricePerLiter": 58.7
+        },
+        {
+          "fat": 5.7,
+          "snf": 8.9,
+          "pricePerLiter": 59.1
+        },
+        {
+          "fat": 5.7,
+          "snf": 9,
+          "pricePerLiter": 59.5
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.1,
+          "pricePerLiter": 59.9
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.2,
+          "pricePerLiter": 60.3
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.3,
+          "pricePerLiter": 60.7
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.4,
+          "pricePerLiter": 61.1
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.5,
+          "pricePerLiter": 61.5
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.6,
+          "pricePerLiter": 61.9
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.7,
+          "pricePerLiter": 62.3
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.8,
+          "pricePerLiter": 62.7
+        },
+        {
+          "fat": 5.7,
+          "snf": 9.9,
+          "pricePerLiter": 63.1
+        },
+        {
+          "fat": 5.7,
+          "snf": 10,
+          "pricePerLiter": 63.5
+        },
+        {
+          "fat": 5.8,
+          "snf": 8,
+          "pricePerLiter": 56
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.1,
+          "pricePerLiter": 56.4
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.2,
+          "pricePerLiter": 56.8
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.3,
+          "pricePerLiter": 57.2
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.4,
+          "pricePerLiter": 57.6
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.5,
+          "pricePerLiter": 58
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.6,
+          "pricePerLiter": 58.4
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.7,
+          "pricePerLiter": 58.8
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.8,
+          "pricePerLiter": 59.2
+        },
+        {
+          "fat": 5.8,
+          "snf": 8.9,
+          "pricePerLiter": 59.6
+        },
+        {
+          "fat": 5.8,
+          "snf": 9,
+          "pricePerLiter": 60
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.1,
+          "pricePerLiter": 60.4
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.2,
+          "pricePerLiter": 60.8
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.3,
+          "pricePerLiter": 61.2
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.4,
+          "pricePerLiter": 61.6
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.5,
+          "pricePerLiter": 62
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.6,
+          "pricePerLiter": 62.4
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.7,
+          "pricePerLiter": 62.8
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.8,
+          "pricePerLiter": 63.2
+        },
+        {
+          "fat": 5.8,
+          "snf": 9.9,
+          "pricePerLiter": 63.6
+        },
+        {
+          "fat": 5.8,
+          "snf": 10,
+          "pricePerLiter": 64
+        },
+        {
+          "fat": 5.9,
+          "snf": 8,
+          "pricePerLiter": 56.5
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.1,
+          "pricePerLiter": 56.9
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.2,
+          "pricePerLiter": 57.3
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.3,
+          "pricePerLiter": 57.7
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.4,
+          "pricePerLiter": 58.1
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.5,
+          "pricePerLiter": 58.5
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.6,
+          "pricePerLiter": 58.9
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.7,
+          "pricePerLiter": 59.3
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.8,
+          "pricePerLiter": 59.7
+        },
+        {
+          "fat": 5.9,
+          "snf": 8.9,
+          "pricePerLiter": 60.1
+        },
+        {
+          "fat": 5.9,
+          "snf": 9,
+          "pricePerLiter": 60.5
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.1,
+          "pricePerLiter": 60.9
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.2,
+          "pricePerLiter": 61.3
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.3,
+          "pricePerLiter": 61.7
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.4,
+          "pricePerLiter": 62.1
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.5,
+          "pricePerLiter": 62.5
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.6,
+          "pricePerLiter": 62.9
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.7,
+          "pricePerLiter": 63.3
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.8,
+          "pricePerLiter": 63.7
+        },
+        {
+          "fat": 5.9,
+          "snf": 9.9,
+          "pricePerLiter": 64.1
+        },
+        {
+          "fat": 5.9,
+          "snf": 10,
+          "pricePerLiter": 64.5
+        },
+        {
+          "fat": 6,
+          "snf": 8,
+          "pricePerLiter": 57
+        },
+        {
+          "fat": 6,
+          "snf": 8.1,
+          "pricePerLiter": 57.4
+        },
+        {
+          "fat": 6,
+          "snf": 8.2,
+          "pricePerLiter": 57.8
+        },
+        {
+          "fat": 6,
+          "snf": 8.3,
+          "pricePerLiter": 58.2
+        },
+        {
+          "fat": 6,
+          "snf": 8.4,
+          "pricePerLiter": 58.6
+        },
+        {
+          "fat": 6,
+          "snf": 8.5,
+          "pricePerLiter": 59
+        },
+        {
+          "fat": 6,
+          "snf": 8.6,
+          "pricePerLiter": 59.4
+        },
+        {
+          "fat": 6,
+          "snf": 8.7,
+          "pricePerLiter": 59.8
+        },
+        {
+          "fat": 6,
+          "snf": 8.8,
+          "pricePerLiter": 60.2
+        },
+        {
+          "fat": 6,
+          "snf": 8.9,
+          "pricePerLiter": 60.6
+        },
+        {
+          "fat": 6,
+          "snf": 9,
+          "pricePerLiter": 61
+        },
+        {
+          "fat": 6,
+          "snf": 9.1,
+          "pricePerLiter": 61.4
+        },
+        {
+          "fat": 6,
+          "snf": 9.2,
+          "pricePerLiter": 61.8
+        },
+        {
+          "fat": 6,
+          "snf": 9.3,
+          "pricePerLiter": 62.2
+        },
+        {
+          "fat": 6,
+          "snf": 9.4,
+          "pricePerLiter": 62.6
+        },
+        {
+          "fat": 6,
+          "snf": 9.5,
+          "pricePerLiter": 63
+        },
+        {
+          "fat": 6,
+          "snf": 9.6,
+          "pricePerLiter": 63.4
+        },
+        {
+          "fat": 6,
+          "snf": 9.7,
+          "pricePerLiter": 63.8
+        },
+        {
+          "fat": 6,
+          "snf": 9.8,
+          "pricePerLiter": 64.2
+        },
+        {
+          "fat": 6,
+          "snf": 9.9,
+          "pricePerLiter": 64.6
+        },
+        {
+          "fat": 6,
+          "snf": 10,
+          "pricePerLiter": 65
+        },
+        {
+          "fat": 6.1,
+          "snf": 8,
+          "pricePerLiter": 57.5
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.1,
+          "pricePerLiter": 57.9
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.2,
+          "pricePerLiter": 58.3
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.3,
+          "pricePerLiter": 58.7
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.4,
+          "pricePerLiter": 59.1
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.5,
+          "pricePerLiter": 59.5
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.6,
+          "pricePerLiter": 59.9
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.7,
+          "pricePerLiter": 60.3
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.8,
+          "pricePerLiter": 60.7
+        },
+        {
+          "fat": 6.1,
+          "snf": 8.9,
+          "pricePerLiter": 61.1
+        },
+        {
+          "fat": 6.1,
+          "snf": 9,
+          "pricePerLiter": 61.5
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.1,
+          "pricePerLiter": 61.9
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.2,
+          "pricePerLiter": 62.3
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.3,
+          "pricePerLiter": 62.7
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.4,
+          "pricePerLiter": 63.1
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.5,
+          "pricePerLiter": 63.5
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.6,
+          "pricePerLiter": 63.9
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.7,
+          "pricePerLiter": 64.3
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.8,
+          "pricePerLiter": 64.7
+        },
+        {
+          "fat": 6.1,
+          "snf": 9.9,
+          "pricePerLiter": 65.1
+        },
+        {
+          "fat": 6.1,
+          "snf": 10,
+          "pricePerLiter": 65.5
+        },
+        {
+          "fat": 6.2,
+          "snf": 8,
+          "pricePerLiter": 58
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.1,
+          "pricePerLiter": 58.4
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.2,
+          "pricePerLiter": 58.8
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.3,
+          "pricePerLiter": 59.2
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.4,
+          "pricePerLiter": 59.6
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.5,
+          "pricePerLiter": 60
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.6,
+          "pricePerLiter": 60.4
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.7,
+          "pricePerLiter": 60.8
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.8,
+          "pricePerLiter": 61.2
+        },
+        {
+          "fat": 6.2,
+          "snf": 8.9,
+          "pricePerLiter": 61.6
+        },
+        {
+          "fat": 6.2,
+          "snf": 9,
+          "pricePerLiter": 62
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.1,
+          "pricePerLiter": 62.4
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.2,
+          "pricePerLiter": 62.8
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.3,
+          "pricePerLiter": 63.2
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.4,
+          "pricePerLiter": 63.6
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.5,
+          "pricePerLiter": 64
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.6,
+          "pricePerLiter": 64.4
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.7,
+          "pricePerLiter": 64.8
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.8,
+          "pricePerLiter": 65.2
+        },
+        {
+          "fat": 6.2,
+          "snf": 9.9,
+          "pricePerLiter": 65.6
+        },
+        {
+          "fat": 6.2,
+          "snf": 10,
+          "pricePerLiter": 66
+        },
+        {
+          "fat": 6.3,
+          "snf": 8,
+          "pricePerLiter": 58.5
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.1,
+          "pricePerLiter": 58.9
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.2,
+          "pricePerLiter": 59.3
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.3,
+          "pricePerLiter": 59.7
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.4,
+          "pricePerLiter": 60.1
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.5,
+          "pricePerLiter": 60.5
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.6,
+          "pricePerLiter": 60.9
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.7,
+          "pricePerLiter": 61.3
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.8,
+          "pricePerLiter": 61.7
+        },
+        {
+          "fat": 6.3,
+          "snf": 8.9,
+          "pricePerLiter": 62.1
+        },
+        {
+          "fat": 6.3,
+          "snf": 9,
+          "pricePerLiter": 62.5
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.1,
+          "pricePerLiter": 62.9
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.2,
+          "pricePerLiter": 63.3
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.3,
+          "pricePerLiter": 63.7
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.4,
+          "pricePerLiter": 64.1
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.5,
+          "pricePerLiter": 64.5
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.6,
+          "pricePerLiter": 64.9
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.7,
+          "pricePerLiter": 65.3
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.8,
+          "pricePerLiter": 65.7
+        },
+        {
+          "fat": 6.3,
+          "snf": 9.9,
+          "pricePerLiter": 66.1
+        },
+        {
+          "fat": 6.3,
+          "snf": 10,
+          "pricePerLiter": 66.5
+        },
+        {
+          "fat": 6.4,
+          "snf": 8,
+          "pricePerLiter": 59
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.1,
+          "pricePerLiter": 59.4
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.2,
+          "pricePerLiter": 59.8
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.3,
+          "pricePerLiter": 60.2
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.4,
+          "pricePerLiter": 60.6
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.5,
+          "pricePerLiter": 61
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.6,
+          "pricePerLiter": 61.4
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.7,
+          "pricePerLiter": 61.8
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.8,
+          "pricePerLiter": 62.2
+        },
+        {
+          "fat": 6.4,
+          "snf": 8.9,
+          "pricePerLiter": 62.6
+        },
+        {
+          "fat": 6.4,
+          "snf": 9,
+          "pricePerLiter": 63
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.1,
+          "pricePerLiter": 63.4
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.2,
+          "pricePerLiter": 63.8
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.3,
+          "pricePerLiter": 64.2
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.4,
+          "pricePerLiter": 64.6
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.5,
+          "pricePerLiter": 65
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.6,
+          "pricePerLiter": 65.4
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.7,
+          "pricePerLiter": 65.8
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.8,
+          "pricePerLiter": 66.2
+        },
+        {
+          "fat": 6.4,
+          "snf": 9.9,
+          "pricePerLiter": 66.6
+        },
+        {
+          "fat": 6.4,
+          "snf": 10,
+          "pricePerLiter": 67
+        },
+        {
+          "fat": 6.5,
+          "snf": 8,
+          "pricePerLiter": 59.5
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.1,
+          "pricePerLiter": 59.9
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.2,
+          "pricePerLiter": 60.3
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.3,
+          "pricePerLiter": 60.7
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.4,
+          "pricePerLiter": 61.1
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.5,
+          "pricePerLiter": 61.5
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.6,
+          "pricePerLiter": 61.9
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.7,
+          "pricePerLiter": 62.3
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.8,
+          "pricePerLiter": 62.7
+        },
+        {
+          "fat": 6.5,
+          "snf": 8.9,
+          "pricePerLiter": 63.1
+        },
+        {
+          "fat": 6.5,
+          "snf": 9,
+          "pricePerLiter": 63.5
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.1,
+          "pricePerLiter": 63.9
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.2,
+          "pricePerLiter": 64.3
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.3,
+          "pricePerLiter": 64.7
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.4,
+          "pricePerLiter": 65.1
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.5,
+          "pricePerLiter": 65.5
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.6,
+          "pricePerLiter": 65.9
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.7,
+          "pricePerLiter": 66.3
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.8,
+          "pricePerLiter": 66.7
+        },
+        {
+          "fat": 6.5,
+          "snf": 9.9,
+          "pricePerLiter": 67.1
+        },
+        {
+          "fat": 6.5,
+          "snf": 10,
+          "pricePerLiter": 67.5
+        },
+        {
+          "fat": 6.6,
+          "snf": 8,
+          "pricePerLiter": 60
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.1,
+          "pricePerLiter": 60.4
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.2,
+          "pricePerLiter": 60.8
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.3,
+          "pricePerLiter": 61.2
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.4,
+          "pricePerLiter": 61.6
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.5,
+          "pricePerLiter": 62
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.6,
+          "pricePerLiter": 62.4
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.7,
+          "pricePerLiter": 62.8
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.8,
+          "pricePerLiter": 63.2
+        },
+        {
+          "fat": 6.6,
+          "snf": 8.9,
+          "pricePerLiter": 63.6
+        },
+        {
+          "fat": 6.6,
+          "snf": 9,
+          "pricePerLiter": 64
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.1,
+          "pricePerLiter": 64.4
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.2,
+          "pricePerLiter": 64.8
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.3,
+          "pricePerLiter": 65.2
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.4,
+          "pricePerLiter": 65.6
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.5,
+          "pricePerLiter": 66
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.6,
+          "pricePerLiter": 66.4
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.7,
+          "pricePerLiter": 66.8
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.8,
+          "pricePerLiter": 67.2
+        },
+        {
+          "fat": 6.6,
+          "snf": 9.9,
+          "pricePerLiter": 67.6
+        },
+        {
+          "fat": 6.6,
+          "snf": 10,
+          "pricePerLiter": 68
+        },
+        {
+          "fat": 6.7,
+          "snf": 8,
+          "pricePerLiter": 60.5
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.1,
+          "pricePerLiter": 60.9
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.2,
+          "pricePerLiter": 61.3
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.3,
+          "pricePerLiter": 61.7
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.4,
+          "pricePerLiter": 62.1
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.5,
+          "pricePerLiter": 62.5
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.6,
+          "pricePerLiter": 62.9
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.7,
+          "pricePerLiter": 63.3
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.8,
+          "pricePerLiter": 63.7
+        },
+        {
+          "fat": 6.7,
+          "snf": 8.9,
+          "pricePerLiter": 64.1
+        },
+        {
+          "fat": 6.7,
+          "snf": 9,
+          "pricePerLiter": 64.5
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.1,
+          "pricePerLiter": 64.9
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.2,
+          "pricePerLiter": 65.3
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.3,
+          "pricePerLiter": 65.7
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.4,
+          "pricePerLiter": 66.1
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.5,
+          "pricePerLiter": 66.5
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.6,
+          "pricePerLiter": 66.9
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.7,
+          "pricePerLiter": 67.3
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.8,
+          "pricePerLiter": 67.7
+        },
+        {
+          "fat": 6.7,
+          "snf": 9.9,
+          "pricePerLiter": 68.1
+        },
+        {
+          "fat": 6.7,
+          "snf": 10,
+          "pricePerLiter": 68.5
+        },
+        {
+          "fat": 6.8,
+          "snf": 8,
+          "pricePerLiter": 61
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.1,
+          "pricePerLiter": 61.4
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.2,
+          "pricePerLiter": 61.8
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.3,
+          "pricePerLiter": 62.2
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.4,
+          "pricePerLiter": 62.6
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.5,
+          "pricePerLiter": 63
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.6,
+          "pricePerLiter": 63.4
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.7,
+          "pricePerLiter": 63.8
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.8,
+          "pricePerLiter": 64.2
+        },
+        {
+          "fat": 6.8,
+          "snf": 8.9,
+          "pricePerLiter": 64.6
+        },
+        {
+          "fat": 6.8,
+          "snf": 9,
+          "pricePerLiter": 65
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.1,
+          "pricePerLiter": 65.4
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.2,
+          "pricePerLiter": 65.8
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.3,
+          "pricePerLiter": 66.2
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.4,
+          "pricePerLiter": 66.6
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.5,
+          "pricePerLiter": 67
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.6,
+          "pricePerLiter": 67.4
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.7,
+          "pricePerLiter": 67.8
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.8,
+          "pricePerLiter": 68.2
+        },
+        {
+          "fat": 6.8,
+          "snf": 9.9,
+          "pricePerLiter": 68.6
+        },
+        {
+          "fat": 6.8,
+          "snf": 10,
+          "pricePerLiter": 69
+        },
+        {
+          "fat": 6.9,
+          "snf": 8,
+          "pricePerLiter": 61.5
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.1,
+          "pricePerLiter": 61.9
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.2,
+          "pricePerLiter": 62.3
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.3,
+          "pricePerLiter": 62.7
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.4,
+          "pricePerLiter": 63.1
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.5,
+          "pricePerLiter": 63.5
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.6,
+          "pricePerLiter": 63.9
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.7,
+          "pricePerLiter": 64.3
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.8,
+          "pricePerLiter": 64.7
+        },
+        {
+          "fat": 6.9,
+          "snf": 8.9,
+          "pricePerLiter": 65.1
+        },
+        {
+          "fat": 6.9,
+          "snf": 9,
+          "pricePerLiter": 65.5
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.1,
+          "pricePerLiter": 65.9
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.2,
+          "pricePerLiter": 66.3
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.3,
+          "pricePerLiter": 66.7
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.4,
+          "pricePerLiter": 67.1
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.5,
+          "pricePerLiter": 67.5
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.6,
+          "pricePerLiter": 67.9
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.7,
+          "pricePerLiter": 68.3
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.8,
+          "pricePerLiter": 68.7
+        },
+        {
+          "fat": 6.9,
+          "snf": 9.9,
+          "pricePerLiter": 69.1
+        },
+        {
+          "fat": 6.9,
+          "snf": 10,
+          "pricePerLiter": 69.5
+        },
+        {
+          "fat": 7,
+          "snf": 8,
+          "pricePerLiter": 62
+        },
+        {
+          "fat": 7,
+          "snf": 8.1,
+          "pricePerLiter": 62.4
+        },
+        {
+          "fat": 7,
+          "snf": 8.2,
+          "pricePerLiter": 62.8
+        },
+        {
+          "fat": 7,
+          "snf": 8.3,
+          "pricePerLiter": 63.2
+        },
+        {
+          "fat": 7,
+          "snf": 8.4,
+          "pricePerLiter": 63.6
+        },
+        {
+          "fat": 7,
+          "snf": 8.5,
+          "pricePerLiter": 64
+        },
+        {
+          "fat": 7,
+          "snf": 8.6,
+          "pricePerLiter": 64.4
+        },
+        {
+          "fat": 7,
+          "snf": 8.7,
+          "pricePerLiter": 64.8
+        },
+        {
+          "fat": 7,
+          "snf": 8.8,
+          "pricePerLiter": 65.2
+        },
+        {
+          "fat": 7,
+          "snf": 8.9,
+          "pricePerLiter": 65.6
+        },
+        {
+          "fat": 7,
+          "snf": 9,
+          "pricePerLiter": 66
+        },
+        {
+          "fat": 7,
+          "snf": 9.1,
+          "pricePerLiter": 66.4
+        },
+        {
+          "fat": 7,
+          "snf": 9.2,
+          "pricePerLiter": 66.8
+        },
+        {
+          "fat": 7,
+          "snf": 9.3,
+          "pricePerLiter": 67.2
+        },
+        {
+          "fat": 7,
+          "snf": 9.4,
+          "pricePerLiter": 67.6
+        },
+        {
+          "fat": 7,
+          "snf": 9.5,
+          "pricePerLiter": 68
+        },
+        {
+          "fat": 7,
+          "snf": 9.6,
+          "pricePerLiter": 68.4
+        },
+        {
+          "fat": 7,
+          "snf": 9.7,
+          "pricePerLiter": 68.8
+        },
+        {
+          "fat": 7,
+          "snf": 9.8,
+          "pricePerLiter": 69.2
+        },
+        {
+          "fat": 7,
+          "snf": 9.9,
+          "pricePerLiter": 69.6
+        },
+        {
+          "fat": 7,
+          "snf": 10,
+          "pricePerLiter": 70
+        },
+        {
+          "fat": 7.1,
+          "snf": 8,
+          "pricePerLiter": 62.5
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.1,
+          "pricePerLiter": 62.9
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.2,
+          "pricePerLiter": 63.3
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.3,
+          "pricePerLiter": 63.7
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.4,
+          "pricePerLiter": 64.1
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.5,
+          "pricePerLiter": 64.5
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.6,
+          "pricePerLiter": 64.9
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.7,
+          "pricePerLiter": 65.3
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.8,
+          "pricePerLiter": 65.7
+        },
+        {
+          "fat": 7.1,
+          "snf": 8.9,
+          "pricePerLiter": 66.1
+        },
+        {
+          "fat": 7.1,
+          "snf": 9,
+          "pricePerLiter": 66.5
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.1,
+          "pricePerLiter": 66.9
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.2,
+          "pricePerLiter": 67.3
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.3,
+          "pricePerLiter": 67.7
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.4,
+          "pricePerLiter": 68.1
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.5,
+          "pricePerLiter": 68.5
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.6,
+          "pricePerLiter": 68.9
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.7,
+          "pricePerLiter": 69.3
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.8,
+          "pricePerLiter": 69.7
+        },
+        {
+          "fat": 7.1,
+          "snf": 9.9,
+          "pricePerLiter": 70.1
+        },
+        {
+          "fat": 7.1,
+          "snf": 10,
+          "pricePerLiter": 70.5
+        },
+        {
+          "fat": 7.2,
+          "snf": 8,
+          "pricePerLiter": 63
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.1,
+          "pricePerLiter": 63.4
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.2,
+          "pricePerLiter": 63.8
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.3,
+          "pricePerLiter": 64.2
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.4,
+          "pricePerLiter": 64.6
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.5,
+          "pricePerLiter": 65
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.6,
+          "pricePerLiter": 65.4
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.7,
+          "pricePerLiter": 65.8
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.8,
+          "pricePerLiter": 66.2
+        },
+        {
+          "fat": 7.2,
+          "snf": 8.9,
+          "pricePerLiter": 66.6
+        },
+        {
+          "fat": 7.2,
+          "snf": 9,
+          "pricePerLiter": 67
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.1,
+          "pricePerLiter": 67.4
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.2,
+          "pricePerLiter": 67.8
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.3,
+          "pricePerLiter": 68.2
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.4,
+          "pricePerLiter": 68.6
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.5,
+          "pricePerLiter": 69
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.6,
+          "pricePerLiter": 69.4
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.7,
+          "pricePerLiter": 69.8
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.8,
+          "pricePerLiter": 70.2
+        },
+        {
+          "fat": 7.2,
+          "snf": 9.9,
+          "pricePerLiter": 70.6
+        },
+        {
+          "fat": 7.2,
+          "snf": 10,
+          "pricePerLiter": 71
+        },
+        {
+          "fat": 7.3,
+          "snf": 8,
+          "pricePerLiter": 63.5
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.1,
+          "pricePerLiter": 63.9
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.2,
+          "pricePerLiter": 64.3
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.3,
+          "pricePerLiter": 64.7
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.4,
+          "pricePerLiter": 65.1
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.5,
+          "pricePerLiter": 65.5
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.6,
+          "pricePerLiter": 65.9
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.7,
+          "pricePerLiter": 66.3
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.8,
+          "pricePerLiter": 66.7
+        },
+        {
+          "fat": 7.3,
+          "snf": 8.9,
+          "pricePerLiter": 67.1
+        },
+        {
+          "fat": 7.3,
+          "snf": 9,
+          "pricePerLiter": 67.5
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.1,
+          "pricePerLiter": 67.9
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.2,
+          "pricePerLiter": 68.3
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.3,
+          "pricePerLiter": 68.7
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.4,
+          "pricePerLiter": 69.1
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.5,
+          "pricePerLiter": 69.5
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.6,
+          "pricePerLiter": 69.9
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.7,
+          "pricePerLiter": 70.3
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.8,
+          "pricePerLiter": 70.7
+        },
+        {
+          "fat": 7.3,
+          "snf": 9.9,
+          "pricePerLiter": 71.1
+        },
+        {
+          "fat": 7.3,
+          "snf": 10,
+          "pricePerLiter": 71.5
+        },
+        {
+          "fat": 7.4,
+          "snf": 8,
+          "pricePerLiter": 64
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.1,
+          "pricePerLiter": 64.4
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.2,
+          "pricePerLiter": 64.8
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.3,
+          "pricePerLiter": 65.2
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.4,
+          "pricePerLiter": 65.6
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.5,
+          "pricePerLiter": 66
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.6,
+          "pricePerLiter": 66.4
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.7,
+          "pricePerLiter": 66.8
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.8,
+          "pricePerLiter": 67.2
+        },
+        {
+          "fat": 7.4,
+          "snf": 8.9,
+          "pricePerLiter": 67.6
+        },
+        {
+          "fat": 7.4,
+          "snf": 9,
+          "pricePerLiter": 68
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.1,
+          "pricePerLiter": 68.4
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.2,
+          "pricePerLiter": 68.8
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.3,
+          "pricePerLiter": 69.2
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.4,
+          "pricePerLiter": 69.6
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.5,
+          "pricePerLiter": 70
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.6,
+          "pricePerLiter": 70.4
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.7,
+          "pricePerLiter": 70.8
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.8,
+          "pricePerLiter": 71.2
+        },
+        {
+          "fat": 7.4,
+          "snf": 9.9,
+          "pricePerLiter": 71.6
+        },
+        {
+          "fat": 7.4,
+          "snf": 10,
+          "pricePerLiter": 72
+        },
+        {
+          "fat": 7.5,
+          "snf": 8,
+          "pricePerLiter": 64.5
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.1,
+          "pricePerLiter": 64.9
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.2,
+          "pricePerLiter": 65.3
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.3,
+          "pricePerLiter": 65.7
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.4,
+          "pricePerLiter": 66.1
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.5,
+          "pricePerLiter": 66.5
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.6,
+          "pricePerLiter": 66.9
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.7,
+          "pricePerLiter": 67.3
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.8,
+          "pricePerLiter": 67.7
+        },
+        {
+          "fat": 7.5,
+          "snf": 8.9,
+          "pricePerLiter": 68.1
+        },
+        {
+          "fat": 7.5,
+          "snf": 9,
+          "pricePerLiter": 68.5
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.1,
+          "pricePerLiter": 68.9
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.2,
+          "pricePerLiter": 69.3
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.3,
+          "pricePerLiter": 69.7
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.4,
+          "pricePerLiter": 70.1
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.5,
+          "pricePerLiter": 70.5
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.6,
+          "pricePerLiter": 70.9
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.7,
+          "pricePerLiter": 71.3
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.8,
+          "pricePerLiter": 71.7
+        },
+        {
+          "fat": 7.5,
+          "snf": 9.9,
+          "pricePerLiter": 72.1
+        },
+        {
+          "fat": 7.5,
+          "snf": 10,
+          "pricePerLiter": 72.5
+        },
+        {
+          "fat": 7.6,
+          "snf": 8,
+          "pricePerLiter": 65
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.1,
+          "pricePerLiter": 65.4
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.2,
+          "pricePerLiter": 65.8
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.3,
+          "pricePerLiter": 66.2
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.4,
+          "pricePerLiter": 66.6
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.5,
+          "pricePerLiter": 67
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.6,
+          "pricePerLiter": 67.4
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.7,
+          "pricePerLiter": 67.8
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.8,
+          "pricePerLiter": 68.2
+        },
+        {
+          "fat": 7.6,
+          "snf": 8.9,
+          "pricePerLiter": 68.6
+        },
+        {
+          "fat": 7.6,
+          "snf": 9,
+          "pricePerLiter": 69
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.1,
+          "pricePerLiter": 69.4
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.2,
+          "pricePerLiter": 69.8
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.3,
+          "pricePerLiter": 70.2
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.4,
+          "pricePerLiter": 70.6
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.5,
+          "pricePerLiter": 71
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.6,
+          "pricePerLiter": 71.4
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.7,
+          "pricePerLiter": 71.8
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.8,
+          "pricePerLiter": 72.2
+        },
+        {
+          "fat": 7.6,
+          "snf": 9.9,
+          "pricePerLiter": 72.6
+        },
+        {
+          "fat": 7.6,
+          "snf": 10,
+          "pricePerLiter": 73
+        },
+        {
+          "fat": 7.7,
+          "snf": 8,
+          "pricePerLiter": 65.5
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.1,
+          "pricePerLiter": 65.9
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.2,
+          "pricePerLiter": 66.3
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.3,
+          "pricePerLiter": 66.7
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.4,
+          "pricePerLiter": 67.1
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.5,
+          "pricePerLiter": 67.5
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.6,
+          "pricePerLiter": 67.9
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.7,
+          "pricePerLiter": 68.3
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.8,
+          "pricePerLiter": 68.7
+        },
+        {
+          "fat": 7.7,
+          "snf": 8.9,
+          "pricePerLiter": 69.1
+        },
+        {
+          "fat": 7.7,
+          "snf": 9,
+          "pricePerLiter": 69.5
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.1,
+          "pricePerLiter": 69.9
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.2,
+          "pricePerLiter": 70.3
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.3,
+          "pricePerLiter": 70.7
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.4,
+          "pricePerLiter": 71.1
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.5,
+          "pricePerLiter": 71.5
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.6,
+          "pricePerLiter": 71.9
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.7,
+          "pricePerLiter": 72.3
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.8,
+          "pricePerLiter": 72.7
+        },
+        {
+          "fat": 7.7,
+          "snf": 9.9,
+          "pricePerLiter": 73.1
+        },
+        {
+          "fat": 7.7,
+          "snf": 10,
+          "pricePerLiter": 73.5
+        },
+        {
+          "fat": 7.8,
+          "snf": 8,
+          "pricePerLiter": 66
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.1,
+          "pricePerLiter": 66.4
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.2,
+          "pricePerLiter": 66.8
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.3,
+          "pricePerLiter": 67.2
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.4,
+          "pricePerLiter": 67.6
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.5,
+          "pricePerLiter": 68
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.6,
+          "pricePerLiter": 68.4
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.7,
+          "pricePerLiter": 68.8
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.8,
+          "pricePerLiter": 69.2
+        },
+        {
+          "fat": 7.8,
+          "snf": 8.9,
+          "pricePerLiter": 69.6
+        },
+        {
+          "fat": 7.8,
+          "snf": 9,
+          "pricePerLiter": 70
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.1,
+          "pricePerLiter": 70.4
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.2,
+          "pricePerLiter": 70.8
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.3,
+          "pricePerLiter": 71.2
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.4,
+          "pricePerLiter": 71.6
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.5,
+          "pricePerLiter": 72
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.6,
+          "pricePerLiter": 72.4
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.7,
+          "pricePerLiter": 72.8
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.8,
+          "pricePerLiter": 73.2
+        },
+        {
+          "fat": 7.8,
+          "snf": 9.9,
+          "pricePerLiter": 73.6
+        },
+        {
+          "fat": 7.8,
+          "snf": 10,
+          "pricePerLiter": 74
+        },
+        {
+          "fat": 7.9,
+          "snf": 8,
+          "pricePerLiter": 66.5
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.1,
+          "pricePerLiter": 66.9
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.2,
+          "pricePerLiter": 67.3
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.3,
+          "pricePerLiter": 67.7
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.4,
+          "pricePerLiter": 68.1
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.5,
+          "pricePerLiter": 68.5
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.6,
+          "pricePerLiter": 68.9
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.7,
+          "pricePerLiter": 69.3
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.8,
+          "pricePerLiter": 69.7
+        },
+        {
+          "fat": 7.9,
+          "snf": 8.9,
+          "pricePerLiter": 70.1
+        },
+        {
+          "fat": 7.9,
+          "snf": 9,
+          "pricePerLiter": 70.5
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.1,
+          "pricePerLiter": 70.9
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.2,
+          "pricePerLiter": 71.3
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.3,
+          "pricePerLiter": 71.7
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.4,
+          "pricePerLiter": 72.1
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.5,
+          "pricePerLiter": 72.5
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.6,
+          "pricePerLiter": 72.9
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.7,
+          "pricePerLiter": 73.3
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.8,
+          "pricePerLiter": 73.7
+        },
+        {
+          "fat": 7.9,
+          "snf": 9.9,
+          "pricePerLiter": 74.1
+        },
+        {
+          "fat": 7.9,
+          "snf": 10,
+          "pricePerLiter": 74.5
+        },
+        {
+          "fat": 8,
+          "snf": 8,
+          "pricePerLiter": 67
+        },
+        {
+          "fat": 8,
+          "snf": 8.1,
+          "pricePerLiter": 67.4
+        },
+        {
+          "fat": 8,
+          "snf": 8.2,
+          "pricePerLiter": 67.8
+        },
+        {
+          "fat": 8,
+          "snf": 8.3,
+          "pricePerLiter": 68.2
+        },
+        {
+          "fat": 8,
+          "snf": 8.4,
+          "pricePerLiter": 68.6
+        },
+        {
+          "fat": 8,
+          "snf": 8.5,
+          "pricePerLiter": 69
+        },
+        {
+          "fat": 8,
+          "snf": 8.6,
+          "pricePerLiter": 69.4
+        },
+        {
+          "fat": 8,
+          "snf": 8.7,
+          "pricePerLiter": 69.8
+        },
+        {
+          "fat": 8,
+          "snf": 8.8,
+          "pricePerLiter": 70.2
+        },
+        {
+          "fat": 8,
+          "snf": 8.9,
+          "pricePerLiter": 70.6
+        },
+        {
+          "fat": 8,
+          "snf": 9,
+          "pricePerLiter": 71
+        },
+        {
+          "fat": 8,
+          "snf": 9.1,
+          "pricePerLiter": 71.4
+        },
+        {
+          "fat": 8,
+          "snf": 9.2,
+          "pricePerLiter": 71.8
+        },
+        {
+          "fat": 8,
+          "snf": 9.3,
+          "pricePerLiter": 72.2
+        },
+        {
+          "fat": 8,
+          "snf": 9.4,
+          "pricePerLiter": 72.6
+        },
+        {
+          "fat": 8,
+          "snf": 9.5,
+          "pricePerLiter": 73
+        },
+        {
+          "fat": 8,
+          "snf": 9.6,
+          "pricePerLiter": 73.4
+        },
+        {
+          "fat": 8,
+          "snf": 9.7,
+          "pricePerLiter": 73.8
+        },
+        {
+          "fat": 8,
+          "snf": 9.8,
+          "pricePerLiter": 74.2
+        },
+        {
+          "fat": 8,
+          "snf": 9.9,
+          "pricePerLiter": 74.6
+        },
+        {
+          "fat": 8,
+          "snf": 10,
+          "pricePerLiter": 75
+        },
+        {
+          "fat": 8.1,
+          "snf": 8,
+          "pricePerLiter": 67.5
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.1,
+          "pricePerLiter": 67.9
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.2,
+          "pricePerLiter": 68.3
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.3,
+          "pricePerLiter": 68.7
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.4,
+          "pricePerLiter": 69.1
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.5,
+          "pricePerLiter": 69.5
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.6,
+          "pricePerLiter": 69.9
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.7,
+          "pricePerLiter": 70.3
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.8,
+          "pricePerLiter": 70.7
+        },
+        {
+          "fat": 8.1,
+          "snf": 8.9,
+          "pricePerLiter": 71.1
+        },
+        {
+          "fat": 8.1,
+          "snf": 9,
+          "pricePerLiter": 71.5
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.1,
+          "pricePerLiter": 71.9
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.2,
+          "pricePerLiter": 72.3
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.3,
+          "pricePerLiter": 72.7
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.4,
+          "pricePerLiter": 73.1
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.5,
+          "pricePerLiter": 73.5
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.6,
+          "pricePerLiter": 73.9
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.7,
+          "pricePerLiter": 74.3
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.8,
+          "pricePerLiter": 74.7
+        },
+        {
+          "fat": 8.1,
+          "snf": 9.9,
+          "pricePerLiter": 75.1
+        },
+        {
+          "fat": 8.1,
+          "snf": 10,
+          "pricePerLiter": 75.5
+        },
+        {
+          "fat": 8.2,
+          "snf": 8,
+          "pricePerLiter": 68
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.1,
+          "pricePerLiter": 68.4
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.2,
+          "pricePerLiter": 68.8
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.3,
+          "pricePerLiter": 69.2
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.4,
+          "pricePerLiter": 69.6
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.5,
+          "pricePerLiter": 70
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.6,
+          "pricePerLiter": 70.4
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.7,
+          "pricePerLiter": 70.8
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.8,
+          "pricePerLiter": 71.2
+        },
+        {
+          "fat": 8.2,
+          "snf": 8.9,
+          "pricePerLiter": 71.6
+        },
+        {
+          "fat": 8.2,
+          "snf": 9,
+          "pricePerLiter": 72
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.1,
+          "pricePerLiter": 72.4
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.2,
+          "pricePerLiter": 72.8
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.3,
+          "pricePerLiter": 73.2
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.4,
+          "pricePerLiter": 73.6
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.5,
+          "pricePerLiter": 74
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.6,
+          "pricePerLiter": 74.4
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.7,
+          "pricePerLiter": 74.8
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.8,
+          "pricePerLiter": 75.2
+        },
+        {
+          "fat": 8.2,
+          "snf": 9.9,
+          "pricePerLiter": 75.6
+        },
+        {
+          "fat": 8.2,
+          "snf": 10,
+          "pricePerLiter": 76
+        },
+        {
+          "fat": 8.3,
+          "snf": 8,
+          "pricePerLiter": 68.5
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.1,
+          "pricePerLiter": 68.9
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.2,
+          "pricePerLiter": 69.3
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.3,
+          "pricePerLiter": 69.7
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.4,
+          "pricePerLiter": 70.1
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.5,
+          "pricePerLiter": 70.5
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.6,
+          "pricePerLiter": 70.9
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.7,
+          "pricePerLiter": 71.3
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.8,
+          "pricePerLiter": 71.7
+        },
+        {
+          "fat": 8.3,
+          "snf": 8.9,
+          "pricePerLiter": 72.1
+        },
+        {
+          "fat": 8.3,
+          "snf": 9,
+          "pricePerLiter": 72.5
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.1,
+          "pricePerLiter": 72.9
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.2,
+          "pricePerLiter": 73.3
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.3,
+          "pricePerLiter": 73.7
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.4,
+          "pricePerLiter": 74.1
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.5,
+          "pricePerLiter": 74.5
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.6,
+          "pricePerLiter": 74.9
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.7,
+          "pricePerLiter": 75.3
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.8,
+          "pricePerLiter": 75.7
+        },
+        {
+          "fat": 8.3,
+          "snf": 9.9,
+          "pricePerLiter": 76.1
+        },
+        {
+          "fat": 8.3,
+          "snf": 10,
+          "pricePerLiter": 76.5
+        },
+        {
+          "fat": 8.4,
+          "snf": 8,
+          "pricePerLiter": 69
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.1,
+          "pricePerLiter": 69.4
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.2,
+          "pricePerLiter": 69.8
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.3,
+          "pricePerLiter": 70.2
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.4,
+          "pricePerLiter": 70.6
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.5,
+          "pricePerLiter": 71
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.6,
+          "pricePerLiter": 71.4
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.7,
+          "pricePerLiter": 71.8
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.8,
+          "pricePerLiter": 72.2
+        },
+        {
+          "fat": 8.4,
+          "snf": 8.9,
+          "pricePerLiter": 72.6
+        },
+        {
+          "fat": 8.4,
+          "snf": 9,
+          "pricePerLiter": 73
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.1,
+          "pricePerLiter": 73.4
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.2,
+          "pricePerLiter": 73.8
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.3,
+          "pricePerLiter": 74.2
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.4,
+          "pricePerLiter": 74.6
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.5,
+          "pricePerLiter": 75
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.6,
+          "pricePerLiter": 75.4
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.7,
+          "pricePerLiter": 75.8
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.8,
+          "pricePerLiter": 76.2
+        },
+        {
+          "fat": 8.4,
+          "snf": 9.9,
+          "pricePerLiter": 76.6
+        },
+        {
+          "fat": 8.4,
+          "snf": 10,
+          "pricePerLiter": 77
+        },
+        {
+          "fat": 8.5,
+          "snf": 8,
+          "pricePerLiter": 69.5
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.1,
+          "pricePerLiter": 69.9
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.2,
+          "pricePerLiter": 70.3
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.3,
+          "pricePerLiter": 70.7
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.4,
+          "pricePerLiter": 71.1
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.5,
+          "pricePerLiter": 71.5
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.6,
+          "pricePerLiter": 71.9
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.7,
+          "pricePerLiter": 72.3
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.8,
+          "pricePerLiter": 72.7
+        },
+        {
+          "fat": 8.5,
+          "snf": 8.9,
+          "pricePerLiter": 73.1
+        },
+        {
+          "fat": 8.5,
+          "snf": 9,
+          "pricePerLiter": 73.5
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.1,
+          "pricePerLiter": 73.9
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.2,
+          "pricePerLiter": 74.3
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.3,
+          "pricePerLiter": 74.7
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.4,
+          "pricePerLiter": 75.1
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.5,
+          "pricePerLiter": 75.5
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.6,
+          "pricePerLiter": 75.9
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.7,
+          "pricePerLiter": 76.3
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.8,
+          "pricePerLiter": 76.7
+        },
+        {
+          "fat": 8.5,
+          "snf": 9.9,
+          "pricePerLiter": 77.1
+        },
+        {
+          "fat": 8.5,
+          "snf": 10,
+          "pricePerLiter": 77.5
+        },
+        {
+          "fat": 8.6,
+          "snf": 8,
+          "pricePerLiter": 70
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.1,
+          "pricePerLiter": 70.4
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.2,
+          "pricePerLiter": 70.8
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.3,
+          "pricePerLiter": 71.2
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.4,
+          "pricePerLiter": 71.6
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.5,
+          "pricePerLiter": 72
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.6,
+          "pricePerLiter": 72.4
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.7,
+          "pricePerLiter": 72.8
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.8,
+          "pricePerLiter": 73.2
+        },
+        {
+          "fat": 8.6,
+          "snf": 8.9,
+          "pricePerLiter": 73.6
+        },
+        {
+          "fat": 8.6,
+          "snf": 9,
+          "pricePerLiter": 74
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.1,
+          "pricePerLiter": 74.4
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.2,
+          "pricePerLiter": 74.8
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.3,
+          "pricePerLiter": 75.2
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.4,
+          "pricePerLiter": 75.6
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.5,
+          "pricePerLiter": 76
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.6,
+          "pricePerLiter": 76.4
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.7,
+          "pricePerLiter": 76.8
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.8,
+          "pricePerLiter": 77.2
+        },
+        {
+          "fat": 8.6,
+          "snf": 9.9,
+          "pricePerLiter": 77.6
+        },
+        {
+          "fat": 8.6,
+          "snf": 10,
+          "pricePerLiter": 78
+        },
+        {
+          "fat": 8.7,
+          "snf": 8,
+          "pricePerLiter": 70.5
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.1,
+          "pricePerLiter": 70.9
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.2,
+          "pricePerLiter": 71.3
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.3,
+          "pricePerLiter": 71.7
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.4,
+          "pricePerLiter": 72.1
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.5,
+          "pricePerLiter": 72.5
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.6,
+          "pricePerLiter": 72.9
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.7,
+          "pricePerLiter": 73.3
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.8,
+          "pricePerLiter": 73.7
+        },
+        {
+          "fat": 8.7,
+          "snf": 8.9,
+          "pricePerLiter": 74.1
+        },
+        {
+          "fat": 8.7,
+          "snf": 9,
+          "pricePerLiter": 74.5
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.1,
+          "pricePerLiter": 74.9
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.2,
+          "pricePerLiter": 75.3
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.3,
+          "pricePerLiter": 75.7
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.4,
+          "pricePerLiter": 76.1
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.5,
+          "pricePerLiter": 76.5
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.6,
+          "pricePerLiter": 76.9
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.7,
+          "pricePerLiter": 77.3
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.8,
+          "pricePerLiter": 77.7
+        },
+        {
+          "fat": 8.7,
+          "snf": 9.9,
+          "pricePerLiter": 78.1
+        },
+        {
+          "fat": 8.7,
+          "snf": 10,
+          "pricePerLiter": 78.5
+        },
+        {
+          "fat": 8.8,
+          "snf": 8,
+          "pricePerLiter": 71
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.1,
+          "pricePerLiter": 71.4
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.2,
+          "pricePerLiter": 71.8
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.3,
+          "pricePerLiter": 72.2
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.4,
+          "pricePerLiter": 72.6
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.5,
+          "pricePerLiter": 73
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.6,
+          "pricePerLiter": 73.4
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.7,
+          "pricePerLiter": 73.8
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.8,
+          "pricePerLiter": 74.2
+        },
+        {
+          "fat": 8.8,
+          "snf": 8.9,
+          "pricePerLiter": 74.6
+        },
+        {
+          "fat": 8.8,
+          "snf": 9,
+          "pricePerLiter": 75
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.1,
+          "pricePerLiter": 75.4
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.2,
+          "pricePerLiter": 75.8
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.3,
+          "pricePerLiter": 76.2
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.4,
+          "pricePerLiter": 76.6
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.5,
+          "pricePerLiter": 77
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.6,
+          "pricePerLiter": 77.4
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.7,
+          "pricePerLiter": 77.8
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.8,
+          "pricePerLiter": 78.2
+        },
+        {
+          "fat": 8.8,
+          "snf": 9.9,
+          "pricePerLiter": 78.6
+        },
+        {
+          "fat": 8.8,
+          "snf": 10,
+          "pricePerLiter": 79
+        },
+        {
+          "fat": 8.9,
+          "snf": 8,
+          "pricePerLiter": 71.5
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.1,
+          "pricePerLiter": 71.9
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.2,
+          "pricePerLiter": 72.3
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.3,
+          "pricePerLiter": 72.7
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.4,
+          "pricePerLiter": 73.1
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.5,
+          "pricePerLiter": 73.5
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.6,
+          "pricePerLiter": 73.9
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.7,
+          "pricePerLiter": 74.3
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.8,
+          "pricePerLiter": 74.7
+        },
+        {
+          "fat": 8.9,
+          "snf": 8.9,
+          "pricePerLiter": 75.1
+        },
+        {
+          "fat": 8.9,
+          "snf": 9,
+          "pricePerLiter": 75.5
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.1,
+          "pricePerLiter": 75.9
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.2,
+          "pricePerLiter": 76.3
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.3,
+          "pricePerLiter": 76.7
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.4,
+          "pricePerLiter": 77.1
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.5,
+          "pricePerLiter": 77.5
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.6,
+          "pricePerLiter": 77.9
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.7,
+          "pricePerLiter": 78.3
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.8,
+          "pricePerLiter": 78.7
+        },
+        {
+          "fat": 8.9,
+          "snf": 9.9,
+          "pricePerLiter": 79.1
+        },
+        {
+          "fat": 8.9,
+          "snf": 10,
+          "pricePerLiter": 79.5
+        },
+        {
+          "fat": 9,
+          "snf": 8,
+          "pricePerLiter": 72
+        },
+        {
+          "fat": 9,
+          "snf": 8.1,
+          "pricePerLiter": 72.4
+        },
+        {
+          "fat": 9,
+          "snf": 8.2,
+          "pricePerLiter": 72.8
+        },
+        {
+          "fat": 9,
+          "snf": 8.3,
+          "pricePerLiter": 73.2
+        },
+        {
+          "fat": 9,
+          "snf": 8.4,
+          "pricePerLiter": 73.6
+        },
+        {
+          "fat": 9,
+          "snf": 8.5,
+          "pricePerLiter": 74
+        },
+        {
+          "fat": 9,
+          "snf": 8.6,
+          "pricePerLiter": 74.4
+        },
+        {
+          "fat": 9,
+          "snf": 8.7,
+          "pricePerLiter": 74.8
+        },
+        {
+          "fat": 9,
+          "snf": 8.8,
+          "pricePerLiter": 75.2
+        },
+        {
+          "fat": 9,
+          "snf": 8.9,
+          "pricePerLiter": 75.6
+        },
+        {
+          "fat": 9,
+          "snf": 9,
+          "pricePerLiter": 76
+        },
+        {
+          "fat": 9,
+          "snf": 9.1,
+          "pricePerLiter": 76.4
+        },
+        {
+          "fat": 9,
+          "snf": 9.2,
+          "pricePerLiter": 76.8
+        },
+        {
+          "fat": 9,
+          "snf": 9.3,
+          "pricePerLiter": 77.2
+        },
+        {
+          "fat": 9,
+          "snf": 9.4,
+          "pricePerLiter": 77.6
+        },
+        {
+          "fat": 9,
+          "snf": 9.5,
+          "pricePerLiter": 78
+        },
+        {
+          "fat": 9,
+          "snf": 9.6,
+          "pricePerLiter": 78.4
+        },
+        {
+          "fat": 9,
+          "snf": 9.7,
+          "pricePerLiter": 78.8
+        },
+        {
+          "fat": 9,
+          "snf": 9.8,
+          "pricePerLiter": 79.2
+        },
+        {
+          "fat": 9,
+          "snf": 9.9,
+          "pricePerLiter": 79.6
+        },
+        {
+          "fat": 9,
+          "snf": 10,
+          "pricePerLiter": 80
+        }
+      ],
+      "updatedAt": "2026-06-15T18:30:05.162Z"
+    }
+  ],
+  "prices": [
+    {
+      "_id": "ne6r9s69kmqfjswvb",
+      "dairyId": "ni3rh3mvzmqfjswv7",
+      "animalType": "cow",
+      "pricePerLiter": 60,
+      "updatedAt": "2026-06-15T18:30:05.159Z"
+    },
+    {
+      "_id": "n0sxta2zsmqfjswvb",
+      "dairyId": "ni3rh3mvzmqfjswv7",
+      "animalType": "buffalo",
+      "pricePerLiter": 80,
+      "updatedAt": "2026-06-15T18:30:05.159Z"
+    }
+  ],
+  "collections": [],
+  "sales": [],
+  "advances": []
+}
