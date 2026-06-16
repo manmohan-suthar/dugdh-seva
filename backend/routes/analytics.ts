@@ -34,12 +34,17 @@ router.get('/summary', (req: AuthenticatedRequest, res: Response, next: NextFunc
     const dairyCollections = db.collections.filter(tx => tx.dairyId === req.dairyId);
     const dairySales = db.sales.filter(tx => tx.dairyId === req.dairyId);
     const dairyAdvances = db.advances.filter(adv => adv.dairyId === req.dairyId);
+    const dairyPayments = db.payments.filter(payment => payment.dairyId === req.dairyId);
     
     const totalCustomersGiving = db.customers.filter(c => c.dairyId === req.dairyId && c.type === 'give').length;
     const totalCustomersTaking = db.customers.filter(c => c.dairyId === req.dairyId && c.type === 'take').length;
     
     const pendingDues = dairySales.reduce((sum, tx) => sum + (tx.balanceDue || 0), 0);
-    const advancesGiven = dairyAdvances.reduce((sum, adv) => sum + (adv.amount || 0), 0);
+    const advancesGiven = dairyAdvances.reduce((sum, adv) => sum + (adv.amount || adv.originalAmount || 0), 0);
+    const advancesUsed = dairyAdvances.reduce((sum, adv) => sum + (adv.usedAmount || 0), 0);
+    const advancesRemaining = dairyAdvances.reduce((sum, adv) => sum + (adv.remainingAmount ?? adv.amount ?? 0), 0);
+    const paymentCredits = dairyPayments.reduce((sum, payment) => sum + (payment.advanceCreditRemaining ?? payment.advanceCredit ?? 0), 0);
+    const totalAdvanceAvailable = Math.max(0, advancesRemaining + paymentCredits);
 
     const filteredCollections = dairyCollections.filter(tx => isDateInRange(tx.date, targetFilter));
     const filteredSales = dairySales.filter(tx => isDateInRange(tx.date, targetFilter));
@@ -104,6 +109,8 @@ router.get('/summary', (req: AuthenticatedRequest, res: Response, next: NextFunc
       totalCustomersTaking,
       pendingDues: parseFloat(pendingDues.toFixed(2)),
       advancesGiven: parseFloat(advancesGiven.toFixed(2)),
+      advancesUsed: parseFloat((advancesUsed + dairyPayments.reduce((sum, payment) => sum + (payment.advanceCreditUsed || 0), 0)).toFixed(2)),
+      advancesRemaining: parseFloat(totalAdvanceAvailable.toFixed(2)),
       dailyBreakdown
     });
   } catch (error) {

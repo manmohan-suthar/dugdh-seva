@@ -247,8 +247,13 @@ export const Dashboard: React.FC = () => {
                 <Wallet className="w-5 h-5" />
               </div>
               <div>
-                <span className="block text-[10px] text-text-muted font-bold uppercase leading-tight">Advance Diya</span>
-                <span className="font-display font-extrabold text-[15px] text-indigo-600">{formatCurrency(data.advancesGiven)}</span>
+                <span className="block text-[10px] text-text-muted font-bold uppercase leading-tight">Advance Left</span>
+                <span className="font-display font-extrabold text-[15px] text-indigo-600">
+                  {formatCurrency(data.advancesRemaining ?? data.advancesGiven)}
+                </span>
+                <span className="block text-[10px] text-text-muted mt-0.5">
+                  Given {formatCurrency(data.advancesGiven)} | Used {formatCurrency(data.advancesUsed ?? 0)}
+                </span>
               </div>
             </div>
           </div>

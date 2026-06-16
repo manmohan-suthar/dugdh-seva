@@ -1,6 +1,7 @@
 import express, { Response, NextFunction } from 'express';
 import { db, saveDb, generateId } from '../db';
 import authMiddleware, { AuthenticatedRequest } from '../middleware/auth';
+import { rebuildBuyerLedgerForCustomer } from '../lib/buyerLedger';
 
 const router = express.Router();
 router.use(authMiddleware);
@@ -78,6 +79,7 @@ router.post('/', async (req: AuthenticatedRequest, res: Response, next: NextFunc
       liters: litersNum,
       ratePerLiter,
       totalAmount,
+      initialAmountPaid: paidNum,
       amountPaid: paidNum,
       balanceDue,
       notes: notes || '',
@@ -141,11 +143,13 @@ router.put('/:id', async (req: AuthenticatedRequest, res: Response, next: NextFu
       sale.liters = finalLiters;
       sale.ratePerLiter = ratePerLiter;
       sale.totalAmount = parseFloat((finalLiters * ratePerLiter).toFixed(2));
+      sale.initialAmountPaid = finalAmountPaid;
       sale.amountPaid = finalAmountPaid;
       sale.balanceDue = parseFloat((sale.totalAmount - finalAmountPaid).toFixed(2));
     }
 
     db.sales[index] = sale;
+    rebuildBuyerLedgerForCustomer(sale.customerId, req.dairyId);
     await saveDb();
 
     const customer = db.customers.find(c => c._id === sale.customerId);
@@ -167,7 +171,10 @@ router.delete('/:id', async (req: AuthenticatedRequest, res: Response, next: Nex
       return res.status(404).json({ error: 'Sale transaction not found' });
     }
 
+    const sale = db.sales[index];
     db.sales.splice(index, 1);
+    const customerId = sale.customerId;
+    rebuildBuyerLedgerForCustomer(customerId, req.dairyId);
     await saveDb();
 
     res.json({ message: 'Sale transaction deleted successfully' });

@@ -62,6 +62,7 @@ export interface MilkSaleTransaction {
   liters: number;
   ratePerLiter: number;
   totalAmount: number;
+  initialAmountPaid?: number;
   amountPaid: number;
   balanceDue: number;
   notes: string;
@@ -71,11 +72,52 @@ export interface MilkSaleTransaction {
   customerSeqId?: number;
 }
 
+export interface BuyerReceipt {
+  _id: string;
+  customerId: string;
+  date: string;
+  saleIds: string[];
+  openingBalance?: number;
+  totalAmount: number;
+  amountReceived: number;
+  creditUsed?: number;
+  creditRemaining?: number;
+  allocatedAmount?: number;
+  balanceDue: number;
+  notes: string;
+  createdAt: string;
+  customerName?: string;
+  customerSeqId?: number;
+}
+
 export interface Advance {
   _id: string;
   customerId: string;
   amount: number;
+  originalAmount?: number;
+  remainingAmount?: number;
+  usedAmount?: number;
   date: string;
+  notes: string;
+  createdAt: string;
+  customerName?: string;
+  customerSeqId?: number;
+}
+
+export interface MilkPayment {
+  _id: string;
+  customerId: string;
+  startDate: string;
+  endDate: string;
+  collectionIds: string[];
+  totalAmount: number;
+  openingBalance?: number;
+  amountPaid: number;
+  advanceUsed?: number;
+  advanceCredit?: number;
+  advanceCreditRemaining?: number;
+  advanceCreditUsed?: number;
+  balanceDue: number;
   notes: string;
   createdAt: string;
   customerName?: string;
@@ -91,6 +133,8 @@ export interface AnalyticsSummary {
   totalCustomersTaking: number;
   pendingDues: number;
   advancesGiven: number;
+  advancesUsed?: number;
+  advancesRemaining?: number;
   dailyBreakdown: Array<{
     date: string;
     collected: number;

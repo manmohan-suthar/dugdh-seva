@@ -14,13 +14,15 @@ import pricesRouter from "./backend/routes/prices";
 import collectionRouter from "./backend/routes/collection";
 import salesRouter from "./backend/routes/sales";
 import advancesRouter from "./backend/routes/advances";
+import paymentsRouter from "./backend/routes/payments";
+import receiptsRouter from "./backend/routes/receipts";
 import analyticsRouter from "./backend/routes/analytics";
 
 dotenv.config({ path: [".env.local", ".env"] });
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // Connect to MongoDB and hydrate the application data.
   await initDb();
@@ -54,6 +56,8 @@ async function startServer() {
   app.use("/api/collection", collectionRouter);
   app.use("/api/sales", salesRouter);
   app.use("/api/advances", advancesRouter);
+  app.use("/api/payments", paymentsRouter);
+  app.use("/api/receipts", receiptsRouter);
   app.use("/api/analytics", analyticsRouter);
 
   // Health check endpoint
@@ -79,7 +83,8 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), "dist");
     app.use(express.static(distPath));
-    app.get("*all", (req, res) => {
+
+    app.get("*", (req, res) => {
       res.sendFile(path.join(distPath, "index.html"));
     });
   }

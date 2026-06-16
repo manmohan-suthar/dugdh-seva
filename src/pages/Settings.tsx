@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   Settings as SettingsIcon, LogOut, ShieldAlert, TableProperties, 
-  MapPin, Phone, Building, User, Save, RefreshCw, X, ShoppingCart
+  MapPin, Phone, Building, User, Save, RefreshCw, X, ShoppingCart, Upload
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import api from '../api/client';
@@ -31,6 +31,9 @@ export const Settings: React.FC = () => {
   const [newSnf, setNewSnf] = useState('');
   const [newPrice, setNewPrice] = useState('');
   const [isSavingChart, setIsSavingChart] = useState(false);
+  const [isImportingChart, setIsImportingChart] = useState(false);
+  const [importTargetAnimal, setImportTargetAnimal] = useState<'cow' | 'buffalo' | null>(null);
+  const chartFileRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     loadSellingPrices();
@@ -161,6 +164,86 @@ export const Settings: React.FC = () => {
     } catch (err) {
       console.error(err);
       setToast({ id: `ch-del-err`, type: 'error', text: 'Delete failed.' });
+    }
+  };
+
+  const openJsonImport = (animal: 'cow' | 'buffalo') => {
+    setImportTargetAnimal(animal);
+    if (chartFileRef.current) {
+      chartFileRef.current.value = '';
+      chartFileRef.current.click();
+    }
+  };
+
+  const handleChartJsonUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    const animal = importTargetAnimal;
+    if (!file || !animal) return;
+
+    setIsImportingChart(true);
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+
+      let entries: Array<{ fat: number; snf: number; pricePerLiter: number }> = [];
+
+      if (Array.isArray(parsed?.entries)) {
+        entries = parsed.entries.map((entry: any) => ({
+          fat: parseFloat(entry.fat),
+          snf: parseFloat(entry.snf),
+          pricePerLiter: parseFloat(entry.pricePerLiter)
+        }));
+      } else if (Array.isArray(parsed?.data) && Array.isArray(parsed?.snf_values)) {
+        entries = parsed.data.flatMap((row: any) => {
+          const fat = parseFloat(row.fat);
+          return parsed.snf_values.flatMap((snfValue: any) => {
+            const rate = row?.rates?.[String(snfValue)];
+            if (rate === undefined || rate === null || rate === '') return [];
+            return [{
+              fat: parseFloat(Number(fat).toFixed(1)),
+              snf: parseFloat(Number(snfValue).toFixed(1)),
+              pricePerLiter: parseFloat(Number(rate).toFixed(2))
+            }];
+          });
+        });
+      } else {
+        throw new Error('Unsupported JSON format');
+      }
+
+      entries = entries
+        .filter((entry) => Number.isFinite(entry.fat) && Number.isFinite(entry.snf) && Number.isFinite(entry.pricePerLiter))
+        .map((entry) => ({
+          fat: parseFloat(entry.fat.toFixed(1)),
+          snf: parseFloat(entry.snf.toFixed(1)),
+          pricePerLiter: parseFloat(entry.pricePerLiter.toFixed(2))
+        }))
+        .sort((a, b) => a.fat - b.fat || a.snf - b.snf);
+
+      if (entries.length === 0) {
+        throw new Error('No usable chart rows found');
+      }
+
+      const response = await api.get('/charts', { params: { animalType: animal } });
+      const activeChart = response.data?.[0];
+      if (activeChart?._id) {
+        await api.put(`/charts/${activeChart._id}`, { entries });
+      } else {
+        await api.post('/charts', { animalType: animal, entries });
+      }
+
+      if (activeChartAnimal === animal) {
+        setChartEntries(entries);
+      }
+      setToast({ id: `chart-import-${Date.now()}`, type: 'success', text: `${animal} chart JSON import ho gaya.` });
+    } catch (err: any) {
+      console.error(err);
+      setToast({ id: `chart-import-err-${Date.now()}`, type: 'error', text: err.message || 'JSON import failed.' });
+    } finally {
+      setIsImportingChart(false);
+      setImportTargetAnimal(null);
+      if (chartFileRef.current) {
+        chartFileRef.current.value = '';
+      }
     }
   };
 
@@ -374,6 +457,33 @@ export const Settings: React.FC = () => {
                 className="p-1.5 rounded-full bg-dairy-bg text-text-muted tap-feedback"
               >
                 <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <input
+              ref={chartFileRef}
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={handleChartJsonUpload}
+            />
+
+            <div className="grid grid-cols-2 gap-3 mb-4 shrink-0">
+              <button
+                type="button"
+                onClick={() => openJsonImport('cow')}
+                className="py-3 px-3 rounded-xl bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold flex items-center justify-center gap-2"
+              >
+                <Upload className="w-4 h-4" />
+                Import Cow JSON
+              </button>
+              <button
+                type="button"
+                onClick={() => openJsonImport('buffalo')}
+                className="py-3 px-3 rounded-xl bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-bold flex items-center justify-center gap-2"
+              >
+                <Upload className="w-4 h-4" />
+                Import Buffalo JSON
               </button>
             </div>
 

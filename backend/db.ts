@@ -10,6 +10,8 @@ export interface DBStructure {
   collections: any[];
   sales: any[];
   advances: any[];
+  payments: any[];
+  receipts: any[];
 }
 
 function emptyDb(): DBStructure {
@@ -20,7 +22,9 @@ function emptyDb(): DBStructure {
     prices: [],
     collections: [],
     sales: [],
-    advances: []
+    advances: [],
+    payments: [],
+    receipts: []
   };
 }
 
@@ -37,7 +41,9 @@ function normalizeDb(data: Partial<DBStructure> | null | undefined): DBStructure
     prices: data?.prices || [],
     collections: data?.collections || [],
     sales: data?.sales || [],
-    advances: data?.advances || []
+    advances: data?.advances || [],
+    payments: data?.payments || [],
+    receipts: data?.receipts || []
   };
 }
 

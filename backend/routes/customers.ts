@@ -136,6 +136,8 @@ router.delete('/:id', async (req: AuthenticatedRequest, res: Response, next: Nex
     db.collections = db.collections.filter(tx => tx.customerId !== req.params.id);
     db.sales = db.sales.filter(tx => tx.customerId !== req.params.id);
     db.advances = db.advances.filter(adv => adv.customerId !== req.params.id);
+    db.payments = db.payments.filter(pay => pay.customerId !== req.params.id);
+    db.receipts = db.receipts.filter(receipt => receipt.customerId !== req.params.id);
 
     await saveDb();
     res.json({ message: 'Customer and related transactions deleted' });

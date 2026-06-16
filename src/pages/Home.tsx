@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowDownCircle, ArrowUpCircle, Settings, Bell, RefreshCw } from 'lucide-react';
+import { ArrowDownCircle, ArrowUpCircle, Settings, RefreshCw, Search, X, Users } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import api from '../api/client';
 import { formatCurrency, formatLiters } from '../lib/formatters';
+import { Customer } from '../types';
 
 interface CombinedEntry {
   id: string;
   type: 'collection' | 'sale';
+  customerId?: string;
   customerName: string;
   customerSeqId: number | string;
   shift?: 'morning' | 'evening';
@@ -29,8 +31,13 @@ export const Home: React.FC = () => {
   const [soldStatusText, setSoldStatusText] = useState<string>('Sthir hai');
   
   const [entries, setEntries] = useState<CombinedEntry[]>([]);
+  const [givingCustomers, setGivingCustomers] = useState<Customer[]>([]);
+  const [takingCustomers, setTakingCustomers] = useState<Customer[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
+  const [progressSheetType, setProgressSheetType] = useState<'collection' | 'sale' | null>(null);
+  const [progressTab, setProgressTab] = useState<'done' | 'pending'>('pending');
+  const [progressSearch, setProgressSearch] = useState('');
 
   // Load stats and recent entries
   const loadDashboardData = async () => {
@@ -59,14 +66,17 @@ export const Home: React.FC = () => {
 
       // 2. Fetch today's transactions
       const todayStr = new Date().toISOString().split('T')[0];
-      const [colRes, saleRes] = await Promise.all([
+      const [colRes, saleRes, givingRes, takingRes] = await Promise.all([
         api.get('/collection', { params: { date: todayStr } }),
-        api.get('/sales', { params: { date: todayStr } })
+        api.get('/sales', { params: { date: todayStr } }),
+        api.get('/customers', { params: { type: 'give' } }),
+        api.get('/customers', { params: { type: 'take' } })
       ]);
 
       const formattedCollections: CombinedEntry[] = (colRes.data || []).map((c: any) => ({
         id: c._id,
         type: 'collection',
+        customerId: c.customerId,
         customerName: c.customerName,
         customerSeqId: c.customerSeqId || c.customerId || 'N/A',
         shift: c.shift,
@@ -81,6 +91,7 @@ export const Home: React.FC = () => {
       const formattedSales: CombinedEntry[] = (saleRes.data || []).map((s: any) => ({
         id: s._id,
         type: 'sale',
+        customerId: s.customerId,
         customerName: s.customerName,
         customerSeqId: s.customerSeqId || s.customerId || 'N/A',
         shift: 'evening',
@@ -95,6 +106,8 @@ export const Home: React.FC = () => {
       );
 
       setEntries(combined);
+      setGivingCustomers(givingRes.data || []);
+      setTakingCustomers(takingRes.data || []);
     } catch (error) {
       console.error('Failed to load home page dynamic data:', error);
     } finally {
@@ -117,6 +130,55 @@ export const Home: React.FC = () => {
   const ownerName = user?.ownerName || 'Rajesh Ji';
   const dairyName = user?.dairyName || 'Sharma Dairy';
   const dairyAddress = user?.address || 'Mathura, UP';
+
+  const customerHasEntry = (customer: Customer, type: 'collection' | 'sale') => {
+    return entries.some((entry) => (
+      entry.type === type &&
+      (
+        entry.customerId === customer._id ||
+        String(entry.customerSeqId) === String(customer.customerId)
+      )
+    ));
+  };
+
+  const collectionDoneCount = givingCustomers.filter((customer) => customerHasEntry(customer, 'collection')).length;
+  const collectionPendingCount = Math.max(givingCustomers.length - collectionDoneCount, 0);
+  const saleDoneCount = takingCustomers.filter((customer) => customerHasEntry(customer, 'sale')).length;
+  const salePendingCount = Math.max(takingCustomers.length - saleDoneCount, 0);
+
+  const openProgressSheet = (type: 'collection' | 'sale') => {
+    setProgressSheetType(type);
+    setProgressTab('pending');
+    setProgressSearch('');
+  };
+
+  const closeProgressSheet = () => {
+    setProgressSheetType(null);
+    setProgressSearch('');
+  };
+
+  const progressSheetCustomers = useMemo(() => {
+    if (!progressSheetType) return [];
+
+    const allCustomers = progressSheetType === 'collection' ? givingCustomers : takingCustomers;
+    const filteredByTab = allCustomers.filter((customer) => {
+      const hasEntry = customerHasEntry(customer, progressSheetType);
+      return progressTab === 'done' ? hasEntry : !hasEntry;
+    });
+
+    const query = progressSearch.trim().toLowerCase();
+    if (!query) return filteredByTab;
+
+    return filteredByTab.filter((customer) => (
+      customer.name.toLowerCase().includes(query) ||
+      String(customer.customerId).includes(query) ||
+      (customer.phone || '').includes(query)
+    ));
+  }, [progressSheetType, progressTab, progressSearch, entries, givingCustomers, takingCustomers]);
+
+  const progressSheetTitle = progressSheetType === 'collection' ? 'Doodh Aane Ka Status' : 'Doodh Le Jane Ka Status';
+  const doneTabLabel = progressSheetType === 'collection' ? 'Aa Gaye' : 'Le Gaye';
+  const emptyListText = progressTab === 'done' ? 'Is tab me abhi koi grahak nahi hai.' : 'Baki list me koi grahak nahi hai.';
 
   return (
     <div className="flex flex-col flex-1 animate-fade-in-up bg-[#F5F5F0] min-h-screen">
@@ -199,6 +261,45 @@ export const Home: React.FC = () => {
             </div>
           </div>
 
+        </div>
+
+        {/* Daily customer progress card */}
+        <div className="bg-white rounded-2xl shadow-xs border border-gray-100 p-5 shrink-0 min-h-[190px]">
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <h3 className="text-base font-extrabold text-gray-900 leading-tight">Aaj Ka Grahak Status</h3>
+              <p className="text-[10px] font-semibold text-gray-500 mt-0.5">Count: ho gaya / baki</p>
+            </div>
+            <div className="p-2.5 bg-gray-100 rounded-xl">
+              <Users className="w-5 h-5 text-gray-600" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 items-stretch">
+            <button
+              type="button"
+              onClick={() => openProgressSheet('collection')}
+              className="rounded-xl border border-green-100 bg-green-50/70 p-4 text-left active:scale-95 transition-all hover:bg-green-50 min-h-[118px] flex flex-col justify-between"
+            >
+              <span className="text-[10px] uppercase tracking-wider text-[#2E7D32] font-extrabold">Doodh Aa Gaya</span>
+              <div className="text-2xl font-black text-gray-900 leading-none mt-3">
+                {collectionDoneCount}/{collectionPendingCount}
+              </div>
+              <p className="text-[10px] font-semibold text-gray-500 mt-2">Aa gaye / baki</p>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => openProgressSheet('sale')}
+              className="rounded-xl border border-amber-100 bg-amber-50/80 p-4 text-left active:scale-95 transition-all hover:bg-amber-50 min-h-[118px] flex flex-col justify-between"
+            >
+              <span className="text-[10px] uppercase tracking-wider text-[#B7791F] font-extrabold">Doodh Le Gaye</span>
+              <div className="text-2xl font-black text-gray-900 leading-none mt-3">
+                {saleDoneCount}/{salePendingCount}
+              </div>
+              <p className="text-[10px] font-semibold text-gray-500 mt-2">Le gaye / baki</p>
+            </button>
+          </div>
         </div>
 
         {/* Action button triggers matching the style prompt perfectly */}
@@ -301,6 +402,104 @@ export const Home: React.FC = () => {
             )}
           </div>
         </div>
+
+      {progressSheetType && (
+        <div className="fixed inset-0 z-[90] flex items-end justify-center">
+          <button
+            type="button"
+            className="absolute inset-0 bg-black/40 backdrop-blur-xs"
+            onClick={closeProgressSheet}
+            aria-label="Close status list"
+          />
+
+          <div className="relative z-10 w-full max-w-[430px] bg-white rounded-t-3xl shadow-2xl p-4 pb-6 animate-fade-in-up min-h-[72vh] max-h-[90vh] flex flex-col">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <h3 className="font-display font-extrabold text-lg text-text-primary">{progressSheetTitle}</h3>
+                <p className="text-[11px] text-text-muted font-semibold">Aaj ke grahak list</p>
+              </div>
+              <button
+                type="button"
+                onClick={closeProgressSheet}
+                className="p-2 rounded-full bg-dairy-bg text-text-muted hover:text-text-primary active:scale-95"
+                aria-label="Close"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-2 bg-dairy-bg border border-border-dairy rounded-2xl p-1 mb-3 h-11 items-center">
+              <button
+                type="button"
+                onClick={() => setProgressTab('done')}
+                className={`h-full text-xs font-bold rounded-xl transition-all ${
+                  progressTab === 'done' ? 'bg-primary text-white shadow-sm' : 'text-text-muted'
+                }`}
+              >
+                {doneTabLabel}
+              </button>
+              <button
+                type="button"
+                onClick={() => setProgressTab('pending')}
+                className={`h-full text-xs font-bold rounded-xl transition-all ${
+                  progressTab === 'pending' ? 'bg-primary text-white shadow-sm' : 'text-text-muted'
+                }`}
+              >
+                Baki
+              </button>
+            </div>
+
+            <div className="relative mb-4">
+              <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                <Search className="h-4 w-4 text-text-muted" />
+              </div>
+              <input
+                type="text"
+                value={progressSearch}
+                onChange={(e) => setProgressSearch(e.target.value)}
+                placeholder="Naam, ID ya mobile se search..."
+                className="block w-full pl-10 pr-4 py-3 bg-white border border-border-dairy rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all shadow-xs"
+              />
+            </div>
+
+            <div className="flex-1 min-h-0 overflow-y-auto no-scrollbar space-y-2.5">
+              {progressSheetCustomers.length === 0 ? (
+                <div className="text-center py-10 px-4 bg-dairy-bg/60 border border-border-dairy rounded-2xl">
+                  <p className="text-sm font-bold text-text-muted">{emptyListText}</p>
+                </div>
+              ) : (
+                progressSheetCustomers.map((customer) => (
+                  <button
+                    key={customer._id}
+                    type="button"
+                    onClick={() => navigate(`/customers/${customer._id}`)}
+                    className="w-full flex items-center justify-between p-3.5 bg-white border border-border-dairy hover:bg-dairy-bg/40 rounded-2xl transition-all shadow-xs text-left active:scale-99"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center font-mono font-extrabold text-xs shrink-0">
+                        #{customer.customerId}
+                      </span>
+                      <div>
+                        <h4 className="font-display font-bold text-[15px] text-text-primary leading-tight">
+                          {customer.name}
+                        </h4>
+                        <p className="text-[11px] text-text-muted font-medium mt-0.5">
+                          {customer.phone || 'No phone'}
+                        </p>
+                      </div>
+                    </div>
+                    <span className={`px-2.5 py-0.5 text-[9px] font-bold uppercase rounded-md tracking-wider ${
+                      customer.milkType === 'cow' ? 'bg-amber-100 text-amber-800' : 'bg-indigo-100 text-indigo-800'
+                    }`}>
+                      {customer.milkType}
+                    </span>
+                  </button>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       </div>
     </div>

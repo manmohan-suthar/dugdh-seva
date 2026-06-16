@@ -15,16 +15,42 @@ router.get('/', (req: AuthenticatedRequest, res: Response, next: NextFunction) =
       list = list.filter(adv => adv.customerId === customerId);
     }
 
-    const result = list.map(adv => {
-      const customer = db.customers.find(c => c._id === adv.customerId);
-      return {
-        ...adv,
-        customerName: customer ? customer.name : 'Unknown',
-        customerSeqId: customer ? customer.customerId : null
-      };
-    });
+    const paymentAdvanceUsedByCustomer = new Map<string, number>();
+    db.payments
+      .filter(payment => payment.dairyId === req.dairyId)
+      .forEach(payment => {
+        const used = Number(payment.advanceUsed) || 0;
+        if (!payment.customerId || used <= 0) return;
+        paymentAdvanceUsedByCustomer.set(
+          payment.customerId,
+          (paymentAdvanceUsedByCustomer.get(payment.customerId) || 0) + used
+        );
+      });
 
-    result.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    const result = [...list]
+      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+      .map(adv => {
+        const customer = db.customers.find(c => c._id === adv.customerId);
+        const originalAmount = Number(adv.originalAmount ?? adv.amount ?? 0);
+        const usedFromLedger = Number(adv.usedAmount ?? 0);
+        const remainingFromLedger = Number(adv.remainingAmount ?? originalAmount);
+        const fallbackUsed = Math.max(0, originalAmount - remainingFromLedger);
+        const totalUsedForCustomer = paymentAdvanceUsedByCustomer.get(adv.customerId) || 0;
+        const usedAmount = usedFromLedger > 0 ? usedFromLedger : Math.min(originalAmount, fallbackUsed || totalUsedForCustomer);
+        const remainingAmount = remainingFromLedger !== originalAmount || adv.remainingAmount !== undefined
+          ? remainingFromLedger
+          : Math.max(0, originalAmount - totalUsedForCustomer);
+
+        return {
+          ...adv,
+          originalAmount,
+          usedAmount: parseFloat(usedAmount.toFixed(2)),
+          remainingAmount: parseFloat(remainingAmount.toFixed(2)),
+          customerName: customer ? customer.name : 'Unknown',
+          customerSeqId: customer ? customer.customerId : null
+        };
+      });
+
     res.json(result);
   } catch (error) {
     next(error);
@@ -55,6 +81,9 @@ router.post('/', async (req: AuthenticatedRequest, res: Response, next: NextFunc
       dairyId: req.dairyId,
       customerId,
       amount: amountNum,
+      originalAmount: amountNum,
+      remainingAmount: amountNum,
+      usedAmount: 0,
       date: date ? new Date(date).toISOString() : new Date().toISOString(),
       notes: notes || '',
       createdAt: new Date().toISOString()
