@@ -7,6 +7,7 @@ export interface DBStructure {
   customers: any[];
   charts: any[];
   prices: any[];
+  settings: any[];
   collections: any[];
   sales: any[];
   advances: any[];
@@ -20,6 +21,7 @@ function emptyDb(): DBStructure {
     customers: [],
     charts: [],
     prices: [],
+    settings: [],
     collections: [],
     sales: [],
     advances: [],
@@ -39,6 +41,7 @@ function normalizeDb(data: Partial<DBStructure> | null | undefined): DBStructure
     customers: data?.customers || [],
     charts: data?.charts || [],
     prices: data?.prices || [],
+    settings: data?.settings || [],
     collections: data?.collections || [],
     sales: data?.sales || [],
     advances: data?.advances || [],
@@ -141,6 +144,17 @@ export async function seedDairyDefaults(dairyId: string) {
       { _id: generateId(), dairyId, animalType: 'cow', entries: cowEntries, updatedAt: new Date().toISOString() },
       { _id: generateId(), dairyId, animalType: 'buffalo', entries: buffaloEntries, updatedAt: new Date().toISOString() }
     );
+  }
+
+  const existingSettings = db.settings.find(s => s.dairyId === dairyId);
+  if (!existingSettings) {
+    db.settings.push({
+      _id: generateId(),
+      dairyId,
+      purchaseAdjustmentType: 'add',
+      purchaseAdjustmentAmount: 0,
+      updatedAt: new Date().toISOString()
+    });
   }
 
   await saveDb();

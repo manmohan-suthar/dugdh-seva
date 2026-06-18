@@ -46,8 +46,12 @@ export interface MilkTransaction {
   liters: number;
   fat: number;
   snf: number;
+  baseRatePerLiter?: number;
   ratePerLiter: number;
+  baseAmount?: number;
   totalAmount: number;
+  purchaseAdjustmentType?: 'add' | 'subtract';
+  purchaseAdjustmentAmount?: number;
   createdAt: string;
   customerName?: string;
   customerPhone?: string;

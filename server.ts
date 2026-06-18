@@ -11,6 +11,7 @@ import authRouter from "./backend/routes/auth";
 import customersRouter from "./backend/routes/customers";
 import chartsRouter from "./backend/routes/charts";
 import pricesRouter from "./backend/routes/prices";
+import settingsRouter from "./backend/routes/settings";
 import collectionRouter from "./backend/routes/collection";
 import salesRouter from "./backend/routes/sales";
 import advancesRouter from "./backend/routes/advances";
@@ -53,6 +54,7 @@ async function startServer() {
   app.use("/api/customers", customersRouter);
   app.use("/api/charts", chartsRouter);
   app.use("/api/prices", pricesRouter);
+  app.use("/api/settings", settingsRouter);
   app.use("/api/collection", collectionRouter);
   app.use("/api/sales", salesRouter);
   app.use("/api/advances", advancesRouter);

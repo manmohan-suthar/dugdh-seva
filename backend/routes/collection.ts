@@ -6,6 +6,23 @@ import calcRate from '../utils/calcRate';
 const router = express.Router();
 router.use(authMiddleware);
 
+function getPurchaseAdjustment(dairyId: string) {
+  const settings = db.settings.find(s => s.dairyId === dairyId);
+  const amount = Number(settings?.purchaseAdjustmentAmount) || 0;
+  const type = settings?.purchaseAdjustmentType === 'subtract' ? 'subtract' : 'add';
+  return { type, amount };
+}
+
+function applyPurchaseRateAdjustment(baseRate: number, dairyId: string) {
+  const adjustment = getPurchaseAdjustment(dairyId);
+  const signedAdjustment = adjustment.type === 'subtract' ? -adjustment.amount : adjustment.amount;
+  return {
+    ratePerLiter: parseFloat(Math.max(0, baseRate + signedAdjustment).toFixed(2)),
+    purchaseAdjustmentType: adjustment.type,
+    purchaseAdjustmentAmount: adjustment.amount
+  };
+}
+
 // @route   GET /api/collection
 router.get('/', (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
   try {
@@ -77,7 +94,9 @@ router.post('/', async (req: AuthenticatedRequest, res: Response, next: NextFunc
     }
 
     const litersNum = parseFloat(liters);
-    const totalAmount = parseFloat((litersNum * rate).toFixed(2));
+    const adjustedRate = applyPurchaseRateAdjustment(rate, req.dairyId!);
+    const baseAmount = parseFloat((litersNum * rate).toFixed(2));
+    const totalAmount = parseFloat((litersNum * adjustedRate.ratePerLiter).toFixed(2));
 
     const newCollection = {
       _id: generateId(),
@@ -89,8 +108,12 @@ router.post('/', async (req: AuthenticatedRequest, res: Response, next: NextFunc
       liters: litersNum,
       fat: parseFloat(fat),
       snf: parseFloat(snf),
-      ratePerLiter: rate,
+      baseRatePerLiter: rate,
+      ratePerLiter: adjustedRate.ratePerLiter,
+      baseAmount,
       totalAmount,
+      purchaseAdjustmentType: adjustedRate.purchaseAdjustmentType,
+      purchaseAdjustmentAmount: adjustedRate.purchaseAdjustmentAmount,
       createdAt: new Date().toISOString()
     };
 
@@ -162,8 +185,13 @@ router.put('/:id', async (req: AuthenticatedRequest, res: Response, next: NextFu
       entry.liters = finalLiters;
       entry.fat = finalFat;
       entry.snf = finalSnf;
-      entry.ratePerLiter = rate;
-      entry.totalAmount = parseFloat((finalLiters * rate).toFixed(2));
+      entry.baseRatePerLiter = rate;
+      const adjustedRate = applyPurchaseRateAdjustment(rate, req.dairyId!);
+      entry.ratePerLiter = adjustedRate.ratePerLiter;
+      entry.baseAmount = parseFloat((finalLiters * rate).toFixed(2));
+      entry.totalAmount = parseFloat((finalLiters * adjustedRate.ratePerLiter).toFixed(2));
+      entry.purchaseAdjustmentType = adjustedRate.purchaseAdjustmentType;
+      entry.purchaseAdjustmentAmount = adjustedRate.purchaseAdjustmentAmount;
     }
 
     db.collections[index] = entry;

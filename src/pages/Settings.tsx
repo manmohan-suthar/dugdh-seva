@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Settings as SettingsIcon, LogOut, ShieldAlert, TableProperties, 
-  MapPin, Phone, Building, User, Save, RefreshCw, X, ShoppingCart, Upload
+  Settings as SettingsIcon, LogOut, TableProperties,
+  MapPin, Phone, Building, User, X, ShoppingCart, Upload, Calculator
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import api from '../api/client';
@@ -24,6 +24,12 @@ export const Settings: React.FC = () => {
   const [buffaloPrice, setBuffaloPrice] = useState('');
   const [isSavingPrices, setIsSavingPrices] = useState(false);
 
+  // Purchase adjustment state
+  const [showAdjustmentModal, setShowAdjustmentModal] = useState(false);
+  const [purchaseAdjustmentType, setPurchaseAdjustmentType] = useState<'add' | 'subtract'>('add');
+  const [purchaseAdjustmentAmount, setPurchaseAdjustmentAmount] = useState('0');
+  const [isSavingAdjustment, setIsSavingAdjustment] = useState(false);
+
   // Rate Charts State
   const [activeChartAnimal, setActiveChartAnimal] = useState<'cow' | 'buffalo' | null>(null);
   const [chartEntries, setChartEntries] = useState<any[]>([]);
@@ -37,6 +43,7 @@ export const Settings: React.FC = () => {
 
   useEffect(() => {
     loadSellingPrices();
+    loadPurchaseSettings();
   }, []);
 
   const loadSellingPrices = async () => {
@@ -49,6 +56,42 @@ export const Settings: React.FC = () => {
       setBuffaloPrice(buffalo ? buffalo.pricePerLiter.toString() : '80');
     } catch (err) {
       console.error('Error fetching prices in settings:', err);
+    }
+  };
+
+  const loadPurchaseSettings = async () => {
+    try {
+      const response = await api.get('/settings');
+      setPurchaseAdjustmentType(response.data.purchaseAdjustmentType === 'subtract' ? 'subtract' : 'add');
+      setPurchaseAdjustmentAmount(String(response.data.purchaseAdjustmentAmount ?? 0));
+    } catch (err) {
+      console.error('Error fetching purchase settings:', err);
+    }
+  };
+
+  const handleUpdatePurchaseAdjustment = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const amount = parseFloat(purchaseAdjustmentAmount);
+
+    if (Number.isNaN(amount) || amount < 0) {
+      setToast({ id: `adj-err-${Date.now()}`, type: 'error', text: 'Adjustment amount sahi number hona chahiye.' });
+      return;
+    }
+
+    setIsSavingAdjustment(true);
+    try {
+      await api.put('/settings', {
+        purchaseAdjustmentType,
+        purchaseAdjustmentAmount: amount
+      });
+
+      setToast({ id: `adj-suc-${Date.now()}`, type: 'success', text: 'Purchase price adjustment save ho gaya!' });
+      setShowAdjustmentModal(false);
+      loadPurchaseSettings();
+    } catch (err: any) {
+      setToast({ id: `adj-save-err-${Date.now()}`, type: 'error', text: 'Adjustment save nahi ho saka.' });
+    } finally {
+      setIsSavingAdjustment(false);
     }
   };
 
@@ -338,7 +381,27 @@ export const Settings: React.FC = () => {
           <TableProperties className="w-4 h-4 text-text-muted" />
         </button>
 
-        {/* Menu item 3: Milk Selling Prices */}
+        {/* Menu item 3: Purchase Price Adjustment */}
+        <button
+          id="btn-settings-purchase-adjustment"
+          onClick={() => setShowAdjustmentModal(true)}
+          className="w-full p-4 bg-white border border-border-dairy rounded-xl hover:bg-dairy-bg/30 text-left flex justify-between items-center transition-all shadow-xs tap-feedback"
+        >
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-primary/10 text-primary rounded-lg">
+              <Calculator className="w-4 h-4" />
+            </div>
+            <div>
+              <h5 className="font-display font-bold text-sm text-text-primary">Purchase Price Adjustment</h5>
+              <p className="text-[10px] text-text-muted">
+                Milk collection rate me {purchaseAdjustmentType === 'subtract' ? '-' : '+'}{formatCurrency(parseFloat(purchaseAdjustmentAmount) || 0)} / L
+              </p>
+            </div>
+          </div>
+          <span className="text-xs font-bold text-primary">Edit</span>
+        </button>
+
+        {/* Menu item 4: Milk Selling Prices */}
         <button
           id="btn-settings-prices"
           onClick={() => setShowPriceModal(true)}
@@ -356,7 +419,7 @@ export const Settings: React.FC = () => {
           <span className="text-xs font-bold text-primary">Edit</span>
         </button>
 
-        {/* Menu item 4: Logout trigger (Red row) */}
+        {/* Menu item 5: Logout trigger (Red row) */}
         <button
           id="btn-settings-logout"
           onClick={handleLogoutClick}
@@ -371,6 +434,89 @@ export const Settings: React.FC = () => {
           </div>
         </button>
       </div>
+
+      {/* Purchase Adjustment Config Sheet Modal */}
+      {showAdjustmentModal && (
+        <div className="fixed inset-0 z-[80] flex items-end justify-center">
+          <div className="absolute inset-0 bg-black/40 backdrop-blur-xs" onClick={() => setShowAdjustmentModal(false)} />
+          <form
+            onSubmit={handleUpdatePurchaseAdjustment}
+            className="relative bg-white w-full max-w-[430px] rounded-t-3xl p-6 shadow-2xl animate-fade-in-up z-10"
+          >
+            <div className="flex justify-between items-center mb-5">
+              <h3 className="font-display font-extrabold text-base text-text-primary">
+                Purchase Price Adjustment
+              </h3>
+              <button
+                type="button"
+                onClick={() => setShowAdjustmentModal(false)}
+                className="p-1.5 rounded-full bg-dairy-bg text-text-muted hover:text-text-primary tap-feedback"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-xs font-semibold text-text-primary uppercase tracking-wider mb-1.5">
+                  Adjustment Type
+                </label>
+                <div className="grid grid-cols-2 gap-2 p-1 bg-dairy-bg rounded-xl border border-border-dairy">
+                  <button
+                    type="button"
+                    onClick={() => setPurchaseAdjustmentType('add')}
+                    className={`py-2.5 rounded-lg text-xs font-bold transition-all ${
+                      purchaseAdjustmentType === 'add' ? 'bg-primary text-white shadow-xs' : 'text-text-muted'
+                    }`}
+                  >
+                    Add Price
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPurchaseAdjustmentType('subtract')}
+                    className={`py-2.5 rounded-lg text-xs font-bold transition-all ${
+                      purchaseAdjustmentType === 'subtract' ? 'bg-primary text-white shadow-xs' : 'text-text-muted'
+                    }`}
+                  >
+                    Minus Price
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-text-primary uppercase tracking-wider mb-1.5">
+                  Amount
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  required
+                  value={purchaseAdjustmentAmount}
+                  onChange={(e) => setPurchaseAdjustmentAmount(e.target.value)}
+                  placeholder="e.g. 4"
+                  className="block w-full px-4 py-3 bg-dairy-bg border border-border-dairy rounded-xl text-sm font-semibold focus:outline-none"
+                />
+                <p className="mt-2 text-[10px] text-text-muted">
+                  Example: base rate 30/L and amount 4 means final rate {purchaseAdjustmentType === 'subtract' ? '26/L' : '34/L'}.
+                </p>
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSavingAdjustment}
+                className="w-full mt-2 py-3.5 bg-primary hover:bg-primary-light disabled:bg-text-muted text-white text-sm font-bold rounded-xl shadow-md transition-all flex items-center justify-center gap-1 tap-feedback"
+              >
+                {isSavingAdjustment ? (
+                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                ) : (
+                  'Save Adjustment'
+                )}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
 
       {/* Selling Price Config Sheet Modal */}
       {showPriceModal && (

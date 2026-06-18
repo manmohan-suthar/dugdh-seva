@@ -63,6 +63,8 @@ export const Collect: React.FC = () => {
   const [fat, setFat] = useState('');
   const [snf, setSnf] = useState('');
   const [chart, setChart] = useState<FatSNFChart | null>(null);
+  const [purchaseAdjustmentType, setPurchaseAdjustmentType] = useState<'add' | 'subtract'>('add');
+  const [purchaseAdjustmentAmount, setPurchaseAdjustmentAmount] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Load giving customers on init
@@ -99,6 +101,17 @@ export const Collect: React.FC = () => {
         .catch(err => {
           console.error('Failed to load charts:', err);
         });
+
+      api.get('/settings')
+        .then(response => {
+          setPurchaseAdjustmentType(response.data.purchaseAdjustmentType === 'subtract' ? 'subtract' : 'add');
+          setPurchaseAdjustmentAmount(Number(response.data.purchaseAdjustmentAmount) || 0);
+        })
+        .catch(err => {
+          console.error('Failed to load purchase settings:', err);
+          setPurchaseAdjustmentType('add');
+          setPurchaseAdjustmentAmount(0);
+        });
     }
   }, [step, selectedCustomer]);
 
@@ -107,7 +120,9 @@ export const Collect: React.FC = () => {
   const enteredSnf = parseFloat(snf);
   const enteredLiters = parseFloat(liters);
 
-  const calculatedRate = (enteredFat && enteredSnf) ? calculateClientRate(chart, enteredFat, enteredSnf) : null;
+  const baseCalculatedRate = (enteredFat && enteredSnf) ? calculateClientRate(chart, enteredFat, enteredSnf) : null;
+  const adjustmentValue = purchaseAdjustmentType === 'subtract' ? -purchaseAdjustmentAmount : purchaseAdjustmentAmount;
+  const calculatedRate = baseCalculatedRate !== null ? Math.max(0, baseCalculatedRate + adjustmentValue) : null;
   const calculatedTotal = (calculatedRate && enteredLiters) ? (calculatedRate * enteredLiters) : 0;
 
   const handleSelectCustomer = (customer: Customer) => {
@@ -394,6 +409,11 @@ export const Collect: React.FC = () => {
                   <div className="text-lg font-extrabold text-text-primary">
                     Rate: <span className="text-primary font-display">{formatCurrency(calculatedRate)}/L</span>
                   </div>
+                  {purchaseAdjustmentAmount > 0 && baseCalculatedRate !== null && (
+                    <div className="text-[11px] font-semibold text-text-muted mt-0.5">
+                      Base {formatCurrency(baseCalculatedRate)}/L {purchaseAdjustmentType === 'subtract' ? '-' : '+'} {formatCurrency(purchaseAdjustmentAmount)}/L
+                    </div>
+                  )}
                   {enteredLiters > 0 && (
                     <div className="text-sm font-semibold text-text-muted mt-0.5">
                       Total: <span className="text-secondary font-display font-extrabold text-base text-text-primary">{formatCurrency(calculatedTotal)}</span> for {formatLiters(enteredLiters)}
